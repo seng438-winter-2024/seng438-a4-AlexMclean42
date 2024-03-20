@@ -195,6 +195,26 @@ We use mutation testing to evaluate the quality and effectiveness of software te
 # how did you test each functionaity with different test data
 
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
+- Advantages of Selenium:
+    - Wide Browser Support: Selenium supports various web browsers, including Chrome, Firefox, Safari, and Edge, making it suitable for cross-browser testing!
+    - When researching Selenium we saw that it can be easily integrated with popular programming languages and frameworks such as Java and Python allowing for flexible test automation solutions.
+    - Also we noticed that Selenium has been in use for a long time so that means that it has a good ecosystem and good documentation!
+- Disadvantages of Selenium:
+    - Very finicky, when using the google chrome extension we all noticed that any click or hover was recorded, which is a good thing but always gave problems without editing the Selenium script.
+    - Selenium requires programming skills and a good understanding of web technologies, which can pose a challenge for beginners. This was evident when we tried to build a java project, as we had to understand frontend languages.
+    - One other thing when learning and playing with Selenium in java, is we found out how slow it is (how long it takes).
+    - A major disadvantage is that Selenium has very little Support for Desktop Applications and has no built-in image recognition.
+- Advantages of SikuliX:
+    - SikuliX offers powerful image recognition capabilities, allowing us to automate scenarios where elements cannot be directly accessed through traditional locators.
+    - One major advantage is simplicity as SikuliX simplifies test automation by enabling testers to automate tasks based on visual elements without requiring deep knowledge of web technologies or programming!
+    - Another major advantage is SikuliX can automate not only web applications but also desktop applications, virtual machines, and even games!
+    - SikuliX is platform-independent and can be used for automating tests on Windows, macOS, and Linux operating systems
+- Disadvantages of SikuliX:
+    - SikuliX has very limited text-based automation as it relies heavily on image recognition
+    - Through research, we noticed that Image-based automation may be slower and less efficient compared to traditional locators!
+    - SikuliX tests may be more prone to breakage due to changes in UI layout or appearance, especially when the UI changes based on the user…
+    - Lastly, dynamic content such as position, and size can lead to problems in the test script design and maintenance.
+
 
 # How the team work/effort was divided and managed
 As a team, we decided to split the work by class. Two members worked on the Range.java class coverage tests while the other two members worked on the DataUtilities.java coverage tests. Once all testing was completed, all members reviewed the work of others, adding comments where needed and fixing any logical errors found. This divided the work load between team members, while achieving effective progress. For the Selenium each of use automated at 2 different functionalities of the ebay.ca!
