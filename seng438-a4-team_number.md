@@ -2,12 +2,12 @@
 
 **Lab. Report \#4 – Mutation Testing and Web app testing**
 
-| Group \#:      |     |
-| -------------- | --- |
-| Student Names: |     |
-|                |     |
-|                |     |
-|                |     |
+| Group \#:  1         |
+| --------------     |
+| Dominic Gartner    |
+| Hamd Khan          |
+| Alexander Mclean   |
+| Noel Thomas        |
 
 # Introduction
 
