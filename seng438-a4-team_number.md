@@ -54,6 +54,53 @@
 
 
 # Report all the statistics and the mutation score for each test class
+## Range Class - Lab 3 Statistics (Old)
+### Branch Coverage Metric
+<div style="background-color: #f0f0f0; width: 800px;">
+    <img src="CoverageMetricScreenshots/RangeBranchCoverage.png" alt="Range Branch Coverage" width="800"/>
+</div>
+
+### Method Coverage Metric
+<div style="background-color: #f0f0f0; width: 800px;">
+    <img src="CoverageMetricScreenshots/RangeMethodCoverage.png" alt="Range Method Coverage" width="800"/>
+</div>
+
+### Statement Coverage Metric
+<div style="background-color: #f0f0f0; width: 800px;">
+    <img src="CoverageMetricScreenshots/RangeStatementCoverage.png" alt="Range Statement Coverage" width="800"/>
+</div>
+
+## Range Class - Lab 3 Mutation Score (Old)
+<div style="background-color: #f0f0f0; width: 800px;">
+    <img src="CoverageMetricScreenshots/Range57%.png" alt="Range Mutation" width="800"/>
+</div>
+
+
+## Range Class - Lab 4 Statistics (New)
+### Branch Coverage Metric
+<div style="background-color: #f0f0f0; width: 800px;">
+    <img src="CoverageMetricScreenshots/UpdatedRangeBranch.png" alt="Range Branch Coverage" width="800"/>
+</div>
+
+### Method Coverage Metric
+<div style="background-color: #f0f0f0; width: 800px;">
+    <img src="CoverageMetricScreenshots/UpdatedRangeMethod.png" alt="Range Method Coverage" width="800"/>
+</div>
+
+### Statement Coverage Metric
+<div style="background-color: #f0f0f0; width: 800px;">
+    <img src="CoverageMetricScreenshots/UpdatedRangeStatement.png" alt="Range Statement Coverage" width="800"/>
+</div>
+
+## Range Class - Lab 4 Mutation Score (New)
+<div style="background-color: #f0f0f0; width: 800px;">
+    <img src="CoverageMetricScreenshots/Range67%.png" alt="Range Mutation" width="800"/>
+</div>
+
+
+
+
+## DataUtilities Class - Lab 3 Statistics (Old)
 
 
 
