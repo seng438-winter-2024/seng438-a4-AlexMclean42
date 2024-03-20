@@ -199,5 +199,8 @@ We use mutation testing to evaluate the quality and effectiveness of software te
 # How the team work/effort was divided and managed
 
 # Difficulties encountered, challenges overcome, and lessons learned
+Throughout this assignment, we did not face any major challenges as a group. However, we did face some challenges in communication of which group member is testing which method. In addition to this, learning to work with the new coverage tools for mutant testing was a challenge as all members in the group were unfamiliar with the technology. However, we were able to overcome this challenge through exploration of the technology, including trial and error when testing our methods. We were able to utilize the documentation to learn where to find the different coverage metrics and how to read the results.
 
 # Comments/feedback on the lab itself
+As a group we really enjoyed this lab, it was helpful getting us familiar with the mutant testing process, and using some concepts we learned in class in a real time environment. Additionally, we all learned a lot about mutant test, as well as Selenium! We found the lab document itself great and very easy to understand. Furthermore, the lab structure allowed for effective learning of testing methodologies and signified the importance of testing in a variety of methods.
+
