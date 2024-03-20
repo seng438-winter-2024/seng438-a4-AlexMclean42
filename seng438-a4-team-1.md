@@ -189,6 +189,90 @@ We use mutation testing to evaluate the quality and effectiveness of software te
 
 
 # Explain your SELENUIM test case design process
+Our design process to create and execute tests on [`https://www.ebay.com/`](https://www.ebay.com/), was to come up with 8 different functionalities of the application (What a customer/user would do on the site), which were:
+
+1. Sort Search Results:
+    - Test functionalities:
+        - Perform a search for a product.
+        - Sort the search results by price (low to high).
+        - Verify that the search results are displayed in ascending order based on price.
+    - Test Data:
+        - Search for a popular product with multiple sellers.
+    - Expected Outcome:
+        - Verify that sorting by price displays search results in ascending order.
+2. View Product Details:
+    - Test functionalities:
+        - Navigate to a product page.
+        - Verify that all relevant details such as product name, price, description, and seller information are displayed correctly.
+    - Test Data:
+        - Navigate to a product page with various types of products (e.g., electronics, clothing).
+    - Expected Outcome:
+        - Ensure all relevant product details (name, price, description, seller information) are correctly displayed.
+3. Add Item to Watchlist:
+    - Test functionalities:
+        - Navigate to a product page.
+        - Click on the "Add to Watchlist" button.
+        - Verify that the item is added to the user's watchlist.
+    - Test Data:
+        - Select products with different categories and price ranges.
+    - Expected Outcome:
+        - Confirm that items are successfully added to the watchlist.
+4. Purchase Item:
+    - Test functionalities:
+        - Navigate to a product page.
+        - Enter the desired quantity.
+        - Click on the "Buy It Now" button.
+        - Proceed through the checkout process by entering shipping and payment details….
+    - Test Data:
+        - Select different products with varying prices.
+        - Use different shipping addresses and payment methods.
+    - Expected Outcome:
+        - Validate successful purchase completion, including order confirmation.
+5. Manage Account Settings:
+    - Test functionalities:
+        - Click on the user profile icon.
+        - Navigate to the account settings page.
+        - Update personal information such as address, email, or password.
+        - Verify that the changes are saved successfully.
+    - Test Data:
+        - Update personal information (address, email, password) with valid and invalid data.
+    - Expected Outcome:
+        - Ensure changes are saved correctly and validation messages appear for invalid data.
+6. Create and Manage a Saved Search:
+    - Test functionalities:
+        - Perform a search for a product.
+        - Click on the "Save this search" button.
+        - Verify that the search is saved to the user's saved searches.
+        - Navigate to the saved searches page.
+        - Verify that the saved search is listed and can be edited or deleted.
+    - Test Data:
+        - Save searches for different product categories.
+        - Edit and delete saved searches.
+    - Expected Outcome:
+        - Verify that searches are saved, edited, and deleted as expected.
+7. Click on the "Sign up" link.
+    - Test functionalities:
+        - Enter valid credentials.
+        - Click on the "Sign up" button.
+        - Verify that the user is logged in successfully.
+        - Register a New Account.
+    - Test Data:
+        - Register with valid credentials.
+        - Register with invalid or incomplete information.
+    - Expected Outcome:
+        - Confirm successful registration with valid data and appropriate error handling for invalid data.
+8. Click on the "Sign In" link.
+    - Test functionalities:
+        - Enter valid credentials.
+        - Click on the "Sign In" button.
+        - Verify that the user is logged in successfully.
+        - Sign In to Account
+    - Test Data:
+        - Sign in with valid credentials.
+        - Sign in with incorrect password or username.
+    - Expected Outcome:
+        - Ensure successful login with valid credentials and appropriate error messages for incorrect login attempts.
+
 
 # Explain the use of assertions and checkpoints
 
