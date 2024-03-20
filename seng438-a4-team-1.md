@@ -71,7 +71,6 @@
     <img src="CoverageMetricScreenshots/Range57.png" alt="Range Mutation" width="800"/>
 </div>
 
-
 ## Range Class - Lab 4 Statistics (New)
 ### Branch Coverage Metric
 <div style="background-color: #f0f0f0; width: 800px;">
@@ -92,7 +91,6 @@
 <div style="background-color: #f0f0f0; width: 800px;">
     <img src="CoverageMetricScreenshots/Range67.png" alt="Range Mutation" width="800"/>
 </div>
-
 
 
 ## DataUtilities Class - Lab 3 Statistics (Old)
@@ -138,7 +136,11 @@
     <img src="CoverageMetricScreenshots/Up.png" alt="DataUtilities Mutation" width="800"/>
 </div>
 
+
+
+
 # Analysis drawn on the effectiveness of each of the test classes
+
 
 
 
@@ -150,6 +152,7 @@
 Equivalent mutants are mutations in the code that do not change the behavior of the program. Such that it is impossible to make a test case that would kill that mutant or make that mutant survive. This is a problem as they still contribute to the mutation score and can inflate or deflate that score, without providing additional insights into the robustness of the test suite. These equivalent mutants can be hard to detect as it requires analyzing the branches and possible outcome of the code. We tried to detect these mutants by 
 - Manual inspection, where we manually review the mutated code and compare its behavior with the original code to determine if the mutation is equivalent. But this was  very time-consuming.
 - Automated code analysis tools we used, Pitest which is a mutation testing tool for Java. PIT had built-in mechanisms to detect and filter out equivalent mutants (Kill or Survived based on our test suite). 
+
 One equivalent mutant that I noticed a lot was “substituting 1 with -1” where they want to test substituting 1 with -1. But In the case of `return (b == null);`, the mutation simply substitutes 1 with -1, which changes the condition to `return (b == -1);`. However, this mutated condition doesn't make logical sense in the context of checking for null. Which proves that not all mutants are testable.
 Overall, detecting equivalent mutants requires a combination of automated tools and manual inspection. By identifying and filtering out equivalent mutants we can improve the test suite's effectiveness.
 
@@ -184,9 +187,6 @@ Some of the test that we added for combineIgnoringNaN were testing `Mutated beha
 
 We also improve the mutation score of the test suites by removing redundant test cases. One issue we had with increasing the mutation score was equivalent mutants and how we were not able to always test that certain mutant. We ended up getting our mutation score to 67% for range and we believe that we may be able to further increase that value!
 
-
-
-
 # Why do we need mutation testing? Advantages and disadvantages of mutation testing
 We use mutation testing to evaluate the quality and effectiveness of software test suites. It involves introducing small changes (mutations) to the source code and running the test suite against these mutated versions to determine if the tests detect the changes. Advantages and disadvantages of mutation testing:
 
@@ -201,6 +201,24 @@ We use mutation testing to evaluate the quality and effectiveness of software te
 
 # Explain your SELENUIM test case design process
 Our design process to create and execute tests on [`https://www.ebay.com/`](https://www.ebay.com/), was to come up with 8 different functionalities of the application (What a customer/user would do on the site), which were:
+
+1. Sort Search Results:
+2. View Product Details:
+3. Add Item to Watchlist:
+4. Purchase Item:
+5. Manage Account Settings:
+6. Create and Manage a Saved Search:
+7. Click on the "Sign up" link. - Alex 
+8. Click on the "Sign In" link. - Alex
+
+
+# Explain the use of assertions and checkpoints
+During the development of the Selenium tests we all used Assertions and Checkpoints to check the scripts to see if they match the expected value. The reason we use assertions and checkpoints is to validate the correctness of the application's behavior/look and ensure that it meets the requirements of what we want. This allows for testers to automatically verify the output of tests and detect any deviations from expected behavior/look.
+
+- We mainly used assertions for checking a single value to see if it matches what we expected.
+- And we mainly used checkpoints to identify the content of the page visually, as it uses Image processing and AI to compare the entire page image to the reference image
+
+# how did you test each functionaity with different test data
 
 1. Sort Search Results:
     - Test functionalities:
@@ -283,16 +301,6 @@ Our design process to create and execute tests on [`https://www.ebay.com/`](http
         - Sign in with incorrect password or username.
     - Expected Outcome:
         - Ensure successful login with valid credentials and appropriate error messages for incorrect login attempts.
-
-# Explain the use of assertions and checkpoints
-During the development of the Selenium tests we all used Assertions and Checkpoints to check the scripts to see if they match the expected value. The reason we use assertions and checkpoints is to validate the correctness of the application's behavior/look and ensure that it meets the requirements of what we want. This allows for testers to automatically verify the output of tests and detect any deviations from expected behavior/look.
-
-- We mainly used assertions for checking a single value to see if it matches what we expected.
-- And we mainly used checkpoints to identify the content of the page visually, as it uses Image processing and AI to compare the entire page image to the reference image
-
-# how did you test each functionaity with different test data
-
-
 
 
 
