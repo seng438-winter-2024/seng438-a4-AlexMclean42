@@ -11,7 +11,6 @@
 
 # Introduction
 
-
 # Analysis of 10 Mutants of the Range class 
 ## Range Function:
 ```
@@ -25,7 +24,6 @@
 96       this.upper = upper;
 97   }
 ``` 
-
 
 ## Mutants:
 ### Survived Mutants:
@@ -50,8 +48,6 @@
   - Killing this mutant showed that our test suite ensures the correct setting of the upper bound.
 - Line 96: Removed assignment to member variable upper
   - This mutant indicates that our test suite verified the proper initialization of the upper bound.
-
-
 
 # Report all the statistics and the mutation score for each test class
 ## Range Class - Lab 3 Statistics (Old)
@@ -99,7 +95,6 @@
 
 
 
-
 ## DataUtilities Class - Lab 3 Statistics (Old)
 ### Branch Coverage Metric
 <div style="background-color: #f0f0f0; width: 800px;">
@@ -143,7 +138,6 @@
     <img src="CoverageMetricScreenshots/Up.png" alt="DataUtilities Mutation" width="800"/>
 </div>
 
-
 # Analysis drawn on the effectiveness of each of the test classes
 
 
@@ -158,10 +152,6 @@ Equivalent mutants are mutations in the code that do not change the behavior of 
 - Automated code analysis tools we used, Pitest which is a mutation testing tool for Java. PIT had built-in mechanisms to detect and filter out equivalent mutants (Kill or Survived based on our test suite). 
 One equivalent mutant that I noticed a lot was “substituting 1 with -1” where they want to test substituting 1 with -1. But In the case of `return (b == null);`, the mutation simply substitutes 1 with -1, which changes the condition to `return (b == -1);`. However, this mutated condition doesn't make logical sense in the context of checking for null. Which proves that not all mutants are testable.
 Overall, detecting equivalent mutants requires a combination of automated tools and manual inspection. By identifying and filtering out equivalent mutants we can improve the test suite's effectiveness.
-
-
-
-
 
 # A discussion of what could have been done to improve the mutation score of the test suites
 
@@ -182,11 +172,6 @@ We use mutation testing to evaluate the quality and effectiveness of software te
     - Resource Intensive: This was very noticeable during the lab as mutation testing was computationally expensive and extremely time-consuming! Generating and running mutations for every line of code requires significant computational resources.
     - Manual Analysis: Interpreting mutation testing results requires manual effort and expertise. We needed to analyze the results and make informed decisions about how to refine the tests.
     - False Positives: Some mutations may not represent real faults in the code but still result in test failures. These false positives can lead to wasted time and effort in investigating and addressing non-existent defects. This happened to us quite often
-
-
-
-
-
 
 # Explain your SELENUIM test case design process
 Our design process to create and execute tests on [`https://www.ebay.com/`](https://www.ebay.com/), was to come up with 8 different functionalities of the application (What a customer/user would do on the site), which were:
@@ -273,10 +258,21 @@ Our design process to create and execute tests on [`https://www.ebay.com/`](http
     - Expected Outcome:
         - Ensure successful login with valid credentials and appropriate error messages for incorrect login attempts.
 
-
 # Explain the use of assertions and checkpoints
+During the development of the Selenium tests we all used Assertions and Checkpoints to check the scripts to see if they match the expected value. The reason we use assertions and checkpoints is to validate the correctness of the application's behavior/look and ensure that it meets the requirements of what we want. This allows for testers to automatically verify the output of tests and detect any deviations from expected behavior/look.
+
+- We mainly used assertions for checking a single value to see if it matches what we expected.
+- And we mainly used checkpoints to identify the content of the page visually, as it uses Image processing and AI to compare the entire page image to the reference image
 
 # how did you test each functionaity with different test data
+
+
+
+
+
+
+
+
 
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
 - Advantages of Selenium:
@@ -298,7 +294,6 @@ Our design process to create and execute tests on [`https://www.ebay.com/`](http
     - Through research, we noticed that Image-based automation may be slower and less efficient compared to traditional locators!
     - SikuliX tests may be more prone to breakage due to changes in UI layout or appearance, especially when the UI changes based on the user…
     - Lastly, dynamic content such as position, and size can lead to problems in the test script design and maintenance.
-
 
 # How the team work/effort was divided and managed
 As a team, we decided to split the work by class. Two members worked on the Range.java class coverage tests while the other two members worked on the DataUtilities.java coverage tests. Once all testing was completed, all members reviewed the work of others, adding comments where needed and fixing any logical errors found. This divided the work load between team members, while achieving effective progress. For the Selenium each of use automated at 2 different functionalities of the ebay.ca!
