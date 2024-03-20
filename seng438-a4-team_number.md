@@ -101,7 +101,47 @@
 
 
 ## DataUtilities Class - Lab 3 Statistics (Old)
+### Branch Coverage Metric
+<div style="background-color: #f0f0f0; width: 800px;">
+    <img src="CoverageMetricScreenshots/DataUtilitiesBranchCoverage.png" alt="DataUtilities Branch Coverage" width="800"/>
+</div>
 
+### Method Coverage Metric
+<div style="background-color: #f0f0f0; width: 800px;">
+    <img src="CoverageMetricScreenshots/DataUtilitiesMethodCoverage.png" alt="DataUtilities Method Coverage" width="800"/>
+</div>
+
+### Statement Coverage Metric
+<div style="background-color: #f0f0f0; width: 800px;">
+    <img src="CoverageMetricScreenshots/DataUtilitiesStatementCoverage.png" alt="DataUtilities Statement Coverage" width="800"/>
+</div>
+
+## DataUtilities Class - Lab 3 Mutation Score (Old)
+<div style="background-color: #f0f0f0; width: 800px;">
+    <img src="CoverageMetricScreenshots/Data89.png" alt="DataUtilities Mutation" width="800"/>
+</div>
+
+
+## DataUtilities Class - Lab 4 Statistics (New)
+### Branch Coverage Metric
+<div style="background-color: #f0f0f0; width: 800px;">
+    <img src="CoverageMetricScreenshots/Up.png" alt="DataUtilities Branch Coverage" width="800"/>
+</div>
+
+### Method Coverage Metric
+<div style="background-color: #f0f0f0; width: 800px;">
+    <img src="CoverageMetricScreenshots/Up.png" alt="DataUtilities Method Coverage" width="800"/>
+</div>
+
+### Statement Coverage Metric
+<div style="background-color: #f0f0f0; width: 800px;">
+    <img src="CoverageMetricScreenshots/Up.png" alt="DataUtilities Statement Coverage" width="800"/>
+</div>
+
+## DataUtilities Class - Lab 4 Mutation Score (New)
+<div style="background-color: #f0f0f0; width: 800px;">
+    <img src="CoverageMetricScreenshots/Up.png" alt="DataUtilities Mutation" width="800"/>
+</div>
 
 
 # Analysis drawn on the effectiveness of each of the test classes
