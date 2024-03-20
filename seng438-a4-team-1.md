@@ -154,9 +154,35 @@ One equivalent mutant that I noticed a lot was “substituting 1 with -1” wher
 Overall, detecting equivalent mutants requires a combination of automated tools and manual inspection. By identifying and filtering out equivalent mutants we can improve the test suite's effectiveness.
 
 # A discussion of what could have been done to improve the mutation score of the test suites
+## **Range Test Suite**
+Our mutation score from lab 3 was 57%, so that means that we have tons of room to improve the the score. The first thing we did as a group was look at each PIT Mutations, and which bugs survived. This helped us identify which methods had more surviving mutations or had less surviving mutations. Through looking them, we saw that there was 4 main methods that had a lot of mutations, these were:
 
+- constrain(double value)
+- combineIgnoringNaN(Range range1, Range range2)
+- expand(Range range, double lowerMargin, double upperMargin)
+- isNaNRange()
 
+Some of the test that we added for combineIgnoringNaN were testing `Mutated behavior: range1 is null` and `range2 is null` for example:
 
+```
+ // Test for line: if (range1 == null)
+    @Test
+    public void testCombineIgnoringNaNMutatedLine2() {
+        Range range1 = null;
+        Range range2 = new Range(0, 10);
+        assertEquals(new Range(0, 10), Range.combineIgnoringNaN(range1, range2)); // Mutated behavior: range1 is null
+    }
+
+    // Test for line: if (range2 == null)
+    @Test
+    public void testCombineIgnoringNaNMutatedLine3() {
+        Range range1 = new Range(0, 10);
+        Range range2 = null;
+        assertEquals(new Range(0, 10), Range.combineIgnoringNaN(range1, range2)); // Mutated behavior: range2 is null
+    }
+```
+
+We also improve the mutation score of the test suites by removing redundant test cases. One issue we had with increasing the mutation score was equivalent mutants and how we were not able to always test that certain mutant. We ended up getting our mutation score to 67% for range and we believe that we may be able to further increase that value!
 
 
 
