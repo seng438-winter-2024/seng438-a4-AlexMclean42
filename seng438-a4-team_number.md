@@ -72,7 +72,7 @@
 
 ## Range Class - Lab 3 Mutation Score (Old)
 <div style="background-color: #f0f0f0; width: 800px;">
-    <img src="CoverageMetricScreenshots/Range57%.png" alt="Range Mutation" width="800"/>
+    <img src="CoverageMetricScreenshots/Range57.png" alt="Range Mutation" width="800"/>
 </div>
 
 
@@ -94,7 +94,7 @@
 
 ## Range Class - Lab 4 Mutation Score (New)
 <div style="background-color: #f0f0f0; width: 800px;">
-    <img src="CoverageMetricScreenshots/Range67%.png" alt="Range Mutation" width="800"/>
+    <img src="CoverageMetricScreenshots/Range67.png" alt="Range Mutation" width="800"/>
 </div>
 
 
