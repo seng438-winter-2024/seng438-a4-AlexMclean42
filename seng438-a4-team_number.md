@@ -14,7 +14,8 @@
 
 # Analysis of 10 Mutants of the Range class 
 ## Range Function:
-`89    public Range(double lower, double upper) {
+```
+89    public Range(double lower, double upper) {
 90        if (lower > upper) {
 91           String msg = "Range(double, double): require lower (" + lower
 92               + ") <= upper (" + upper + ").";
@@ -22,7 +23,9 @@
 94       }
 95       this.lower = lower;
 96       this.upper = upper;
-97   }`
+97   }
+``` 
+
 
 ## Mutants:
 ### Survived Mutants:
