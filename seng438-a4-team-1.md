@@ -145,6 +145,14 @@
 
 
 # Analysis drawn on the effectiveness of each of the test classes
+
+
+
+
+
+
+
+# A discussion on the effect of equivalent mutants on mutation score accuracy
 Equivalent mutants are mutations in the code that do not change the behavior of the program. Such that it is impossible to make a test case that would kill that mutant or make that mutant survive. This is a problem as they still contribute to the mutation score and can inflate or deflate that score, without providing additional insights into the robustness of the test suite. These equivalent mutants can be hard to detect as it requires analyzing the branches and possible outcome of the code. We tried to detect these mutants by 
 - Manual inspection, where we manually review the mutated code and compare its behavior with the original code to determine if the mutation is equivalent. But this was  very time-consuming.
 - Automated code analysis tools we used, Pitest which is a mutation testing tool for Java. PIT had built-in mechanisms to detect and filter out equivalent mutants (Kill or Survived based on our test suite). 
@@ -154,11 +162,31 @@ Overall, detecting equivalent mutants requires a combination of automated tools 
 
 
 
-# A discussion on the effect of equivalent mutants on mutation score accuracy
 
 # A discussion of what could have been done to improve the mutation score of the test suites
 
+
+
+
+
+
+
 # Why do we need mutation testing? Advantages and disadvantages of mutation testing
+We use mutation testing to evaluate the quality and effectiveness of software test suites. It involves introducing small changes (mutations) to the source code and running the test suite against these mutated versions to determine if the tests detect the changes. Advantages and disadvantages of mutation testing:
+
+- **Advantages**
+    - Effectiveness Evaluation: Mutation testing provides a comprehensive assessment of the quality of the test suite by measuring its ability to detect faults in the code. Where a high mutation score indicates a good test suite and a low mutation score indicates a bad test suite.
+    - Fault Detection: It helps identify weaknesses in the test suite by revealing areas where tests fail to detect changes in the code. This feedback enables developers to improve test coverage and strengthen the testing strategy.
+    - Quality Assurance: By identifying areas of the code that are not adequately covered by tests, mutation testing helps improve overall software quality and reliability. It ensures that potential bugs are detected early in the development process.
+- **Disadvantages**:
+    - Resource Intensive: This was very noticeable during the lab as mutation testing was computationally expensive and extremely time-consuming! Generating and running mutations for every line of code requires significant computational resources.
+    - Manual Analysis: Interpreting mutation testing results requires manual effort and expertise. We needed to analyze the results and make informed decisions about how to refine the tests.
+    - False Positives: Some mutations may not represent real faults in the code but still result in test failures. These false positives can lead to wasted time and effort in investigating and addressing non-existent defects. This happened to us quite often
+
+
+
+
+
 
 # Explain your SELENUIM test case design process
 
@@ -169,7 +197,6 @@ Overall, detecting equivalent mutants requires a combination of automated tools 
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
 
 # How the team work/effort was divided and managed
-
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
