@@ -140,13 +140,13 @@
 
 
 # Analysis drawn on the effectiveness of each of the test classes
+## **DataUtilitesTest**
 
+When looking at the coverage for DataUtilites ****from assignment 3 to assignment 4 we can see that our Branch Coverage went from 84.4% to 97.9%, our Method Coverage stayed at 100.0% and our Statement Coverage went from 89.9% to 100%! When we ran the PiTest for DataUtilities based on the code from assignment 3 we got a mutation coverage of 89% which is very high! Meaning our test for DataUtilities were built good and accounted for mutants very well (even if we didn’t try too). So we wrote some test cases targeted at mutants that survived which allowed us to increase our DataUtilities mutation coverage to 91%, which isn’t a very large increase but we had a lot of problems with increasing this number due to the large amount of surviving equivalent mutants. 
 
+## **RangeTest**
 
-
-
-
-
+When looking at the coverage for Range from assignment 3 to assignment 4 we can see that our Branch Coverage went from 87.8% to 95.8%, our Method Coverage went from 100.0% to 95.7% and our Statement Coverage went from 88.4% to 96.1%! When we ran the PiTest for Range based on the code from assignment 3 we got a mutation coverage of 57%. This indicated us that our Range test cases we there but not at good (robust) as we previously thought. So we wrote some test cases targeted at mutants that survived which allowed us to increase our Range mutation coverage to 67%, which made out test cases much stronger!
 
 # A discussion on the effect of equivalent mutants on mutation score accuracy
 Equivalent mutants are mutations in the code that do not change the behavior of the program. Such that it is impossible to make a test case that would kill that mutant or make that mutant survive. This is a problem as they still contribute to the mutation score and can inflate or deflate that score, without providing additional insights into the robustness of the test suite. These equivalent mutants can be hard to detect as it requires analyzing the branches and possible outcome of the code. We tried to detect these mutants by 
