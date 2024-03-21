@@ -236,7 +236,7 @@ During the development of the Selenium tests we all used Assertions and Checkpoi
     - Test Data:
         - Sort by ascending order (price low to high) 
         - Sort by descending order (price high to low)
-        - Search for a popular product with multiple sellers.
+        - Search for a popular products.
     - Expected Outcome:
         - Verify that sorting by price displays search results matching sort criteria
 2. View Product Details:
