@@ -146,14 +146,15 @@ When looking at the coverage for DataUtilites from assignment 3 to assignment 4 
 
 ## **RangeTest**
 
-When looking at the coverage for Range from assignment 3 to assignment 4 we can see that our Branch Coverage went from 87.8% to 95.8%, our Method Coverage went from 100.0% to 95.7% and our Statement Coverage went from 88.4% to 96.1%! When we ran the PiTest for Range based on the code from assignment 3 we got a mutation coverage of 57%. This indicated us that our Range test cases we there but not at good (robust) as we previously thought. So we wrote some test cases targeted at mutants that survived which allowed us to increase our Range mutation coverage to 67%, which made out test cases much stronger!
+When looking at the coverage for Range from assignment 3 to assignment 4 we can see that our Branch Coverage went from 87.8% to 95.8%, our Method Coverage went from 100.0% to 95.7% and our Statement Coverage went from 88.4% to 96.1%! When we ran the PiTest for Range based on the code from assignment 3 we got a mutation coverage of 57%. This indicated us that our Range test cases we there but not as good (robust) as we previously thought. So we wrote some test cases targeted at mutants that survived which allowed us to increase our Range mutation coverage to 67%, which made out test cases much stronger!
 
 # A discussion on the effect of equivalent mutants on mutation score accuracy
-Equivalent mutants are mutations in the code that do not change the behavior of the program. Such that it is impossible to make a test case that would kill that mutant or make that mutant survive. This is a problem as they still contribute to the mutation score and can inflate or deflate that score, without providing additional insights into the robustness of the test suite. These equivalent mutants can be hard to detect as it requires analyzing the branches and possible outcome of the code. We tried to detect these mutants by 
-- Manual inspection, where we manually review the mutated code and compare its behavior with the original code to determine if the mutation is equivalent. But this was  very time-consuming.
-- Automated code analysis tools we used, Pitest which is a mutation testing tool for Java. PIT had built-in mechanisms to detect and filter out equivalent mutants (Kill or Survived based on our test suite). 
+Equivalent mutants are mutations in the code that do not change the behavior of the program. Such that it is impossible to make a test case that would kill that mutant or make that mutant survive. This is a problem as they still contribute to the mutation score and can inflate or deflate that score, without providing additional insights into the robustness of the test suite. These equivalent mutants can be hard to detect as it requires analyzing the branches and possible outcome of the code. We tried to detect these mutants by performing/using
 
-One equivalent mutant that I noticed a lot was “substituting 1 with -1” where they want to test substituting 1 with -1. But In the case of `return (b == null);`, the mutation simply substitutes 1 with -1, which changes the condition to `return (b == -1);`. However, this mutated condition doesn't make logical sense in the context of checking for null. Which proves that not all mutants are testable.
+- Manual inspections, where we manually review the mutated code and compare its behavior with the original code to determine if the mutation is equivalent. But this was very time-consuming.
+- Automated code analysis tools we used, Pitest which is a mutation testing tool for Java. PIT had built-in mechanisms to detect and filter out equivalent mutants (Killed or Survived based on our test suite).
+
+One equivalent mutant that we noticed a lot was “substituting 1 with -1”, where the test would test substituting 1 with -1. But In the case of `return (b == null);`, the mutation simply substitutes 1 with -1, which changes the condition to `return (b == -1);`. However, this mutated condition doesn't make logical sense in the context of checking for null. Which proves that not all mutants are testable.
 Overall, detecting equivalent mutants requires a combination of automated tools and manual inspection. By identifying and filtering out equivalent mutants we can improve the test suite's effectiveness.
 
 # A discussion of what could have been done to improve the mutation score of the test suites
@@ -189,25 +190,25 @@ We also improve the mutation score of the test suites by removing redundant test
 
 ## **DataUtilities Test Suite**
 
-Our mutation score from lab 3 was 89%, so that means that we already have a really good mutation score, which may be hard to further improve! The first thing we did as a group was look at each PIT Mutations, and which bugs survived. This helped us identify which methods had more surviving mutations or had less surviving mutations. Through looking them, we saw that there was **`4`** main methods that had a lot of mutations, these were:
+Our mutation score from lab 3 was 89%, so that means that we already have a really good mutation score, which made it really hard to further improve! The first thing we did as a group was look at each PIT Mutations, and which bugs survived. This helped us identify which methods had more surviving mutations or had less surviving mutations. Through looking them, we saw that there was 3 main methods that had a lot of mutations, these were:
 
 - equal(double[][] a, double[][] b)
 - calculateRowTotal(Values2D data, int row)
 - createNumberArray(double[] data)
 
-But we quickly ran into a problem in the testing as many of the surviving mutationing were equivalent mutants, such that we were not able to test to many of these. For example, as mentioned above, one equivalent mutant that I noticed a lot was “substituting 1 with -1” where they want to test substituting 1 with -1. But In the case of `return (b == null);`, the mutation simply substitutes 1 with -1, which changes the condition to `return (b == -1);`. However, this mutated condition doesn't make logical sense in the context of checking for null. Which proves that not all mutants are testable. After writing and waiting a very long time for PiTest to run, we were able to increase our DataUtilities class from 89% mutant coverage to 91% mutant coverage!
+But we quickly ran into a problem in the testing as many of the surviving mutationing were equivalent mutants, such that we were not able to test to many of these. For example, as mentioned above, one equivalent mutant that I noticed a lot was “substituting 1 with -1” where they want to test substituting 1 with -1. But In the case of `return (b == null);`, the mutation simply substitutes 1 with -1, which changes the condition to `return (b == -1);`. However, this mutated condition doesn't make logical sense in the context of checking for null. Which proves that not all mutants are testable. After writing and waiting a very long time for PiTest to run, we were able to increase our DataUtilities class from 89% mutant coverage to 91% mutant coverage! We weren’t able to increase mutant coverage to the full 10% due to the amount of equivalent mutants.
 
 # Why do we need mutation testing? Advantages and disadvantages of mutation testing
-We use mutation testing to evaluate the quality and effectiveness of software test suites. It involves introducing small changes (mutations) to the source code and running the test suite against these mutated versions to determine if the tests detect the changes. Advantages and disadvantages of mutation testing:
+We use mutation testing to evaluate the quality and effectiveness of software test suites. It involves introducing small changes (mutations) to the source code and running the test suite against these mutated versions to determine if the tests detect the changes. Advantages and disadvantages of mutation testing are as follows:
 
 - **Advantages**
-    - Effectiveness Evaluation: Mutation testing provides a comprehensive assessment of the quality of the test suite by measuring its ability to detect faults in the code. Where a high mutation score indicates a good test suite and a low mutation score indicates a bad test suite.
+    - Effectiveness: Mutation testing provides a comprehensive assessment of the quality of the test suite by measuring its ability to detect faults in the code. Where a high mutation score indicates a good test suite and a low mutation score indicates a bad test suite.
     - Fault Detection: It helps identify weaknesses in the test suite by revealing areas where tests fail to detect changes in the code. This feedback enables developers to improve test coverage and strengthen the testing strategy.
     - Quality Assurance: By identifying areas of the code that are not adequately covered by tests, mutation testing helps improve overall software quality and reliability. It ensures that potential bugs are detected early in the development process.
 - **Disadvantages**:
-    - Resource Intensive: This was very noticeable during the lab as mutation testing was computationally expensive and extremely time-consuming! Generating and running mutations for every line of code requires significant computational resources.
+    - Resource Intensive: Generating and running mutations for every line of code requires significant computational resources. This was very noticeable during the lab as mutation testing was computationally expensive and extremely time-consuming!
     - Manual Analysis: Interpreting mutation testing results requires manual effort and expertise. We needed to analyze the results and make informed decisions about how to refine the tests.
-    - False Positives: Some mutations may not represent real faults in the code but still result in test failures. These false positives can lead to wasted time and effort in investigating and addressing non-existent defects. This happened to us quite often
+    - False Positives: Some mutations may not represent real faults in the code but still result in test failures. This happened to us quite often, wasting our time.
 
 # Explain your SELENUIM test case design process
 Our design process to create and execute tests on [`https://www.ebay.com/`](https://www.ebay.com/), was to come up with 8 different functionalities of the application (What a customer/user would do on the site), which were:
