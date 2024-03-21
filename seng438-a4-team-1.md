@@ -207,7 +207,7 @@ Our design process to create and execute tests on [`https://www.ebay.com/`](http
 3. Add Item to Watchlist: - Dom
 4. Purchase Item: - Dom
 5. Manage Account Settings:
-6. Create and Manage a Saved Search:
+6. Create a Saved Search: Hamd
 7. Click on the "Sign up" link. - Alex 
 8. Click on the "Sign In" link. - Alex
 
@@ -223,12 +223,14 @@ During the development of the Selenium tests we all used Assertions and Checkpoi
 1. Sort Search Results:
     - Test functionalities:
         - Perform a search for a product.
-        - Sort the search results by price (low to high).
-        - Verify that the search results are displayed in ascending order based on price.
+        - Sort the search results by sort criteria.
+        - Verify that the search results are displayed matching to the sort criteria.
     - Test Data:
+        - Sort by ascending order (price low to high) 
+        - Sort by descending order (price high to low)
         - Search for a popular product with multiple sellers.
     - Expected Outcome:
-        - Verify that sorting by price displays search results in ascending order.
+        - Verify that sorting by price displays search results matching sort criteria
 2. View Product Details:
     - Test functionalities:
         - Navigate to a product page.
@@ -267,18 +269,17 @@ During the development of the Selenium tests we all used Assertions and Checkpoi
         - Update personal information (address, email, password) with valid and invalid data.
     - Expected Outcome:
         - Ensure changes are saved correctly and validation messages appear for invalid data.
-6. Create and Manage a Saved Search:
+6. Create a Saved Search:
     - Test functionalities:
         - Perform a search for a product.
         - Click on the "Save this search" button.
         - Verify that the search is saved to the user's saved searches.
         - Navigate to the saved searches page.
-        - Verify that the saved search is listed and can be edited or deleted.
+        - Verify that the correct product is saved and is listed.
     - Test Data:
         - Save searches for different product categories.
-        - Edit and delete saved searches.
     - Expected Outcome:
-        - Verify that searches are saved, edited, and deleted as expected.
+        - Verify that searches are saved to the saved searches page.
 7. Click on the "Sign up" link.
     - Test functionalities:
         - Enter valid credentials.
