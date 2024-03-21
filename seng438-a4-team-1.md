@@ -204,8 +204,8 @@ Our design process to create and execute tests on [`https://www.ebay.com/`](http
 
 1. Sort Search Results:
 2. View Product Details:
-3. Add Item to Watchlist:
-4. Purchase Item:
+3. Add Item to Watchlist: - Dom
+4. Purchase Item: - Dom
 5. Manage Account Settings:
 6. Create and Manage a Saved Search:
 7. Click on the "Sign up" link. - Alex 
