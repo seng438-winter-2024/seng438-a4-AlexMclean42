@@ -315,7 +315,7 @@ During the development of the Selenium tests we all used Assertions and Checkpoi
 
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
 - Advantages of Selenium:
-    - Wide Browser Support: Selenium supports various web browsers, including Chrome, Firefox, Safari, and Edge, making it suitable for cross-browser testing!
+    - Wide Browser Support: Chrome, Firefox, Safari, and Edge, making it suitable for cross-browser testing!
     - When researching Selenium we saw that it can be easily integrated with popular programming languages and frameworks such as Java and Python allowing for flexible test automation solutions.
     - Also we noticed that Selenium has been in use for a long time so that means that it has a good ecosystem and good documentation!
 - Disadvantages of Selenium:
@@ -335,11 +335,11 @@ During the development of the Selenium tests we all used Assertions and Checkpoi
     - Lastly, dynamic content such as position, and size can lead to problems in the test script design and maintenance.
 
 # How the team work/effort was divided and managed
-As a team, we decided to split the work by class. Two members worked on the Range.java class coverage tests while the other two members worked on the DataUtilities.java coverage tests. Once all testing was completed, all members reviewed the work of others, adding comments where needed and fixing any logical errors found. This divided the work load between team members, while achieving effective progress. For the Selenium each of use automated at 2 different functionalities of the ebay.ca!
+As a team, we decided to split the work by class. Two members worked on the Range.java class coverage tests while the other two members worked on the DataUtilities.java coverage tests. Once all testing was completed, all members reviewed the work of others, adding comments where needed and fixing any logical errors found. This divided the work load between team members, while achieving effective progress. For the Selenium tests, each of use automated 2 different functionalities of the ebay.ca! (As listed above)
 
 # Difficulties encountered, challenges overcome, and lessons learned
 Throughout this assignment, we did not face any major challenges as a group. However, we did face some challenges in communication of which group member is testing which method. In addition to this, learning to work with the new coverage tools for mutant testing was a challenge as all members in the group were unfamiliar with the technology. However, we were able to overcome this challenge through exploration of the technology, including trial and error when testing our methods. We were able to utilize the documentation to learn where to find the different coverage metrics and how to read the results.
 
 # Comments/feedback on the lab itself
-As a group we really enjoyed this lab, it was helpful getting us familiar with the mutant testing process, and using some concepts we learned in class in a real time environment. Additionally, we all learned a lot about mutant test, as well as Selenium! We found the lab document itself great and very easy to understand. Furthermore, the lab structure allowed for effective learning of testing methodologies and signified the importance of testing in a variety of methods.
+As a group we really enjoyed this lab, it was helpful getting us familiar with the mutant testing process, and using some concepts we learned in class in a real time environment. Additionally, we all learned a lot about mutant test, as well as Selenium (some of us have used it before for web-scraping so it was really cool to see other uses/capabilities). We found the lab document itself great and very easy to understand. Furthermore, the lab structure allowed for effective learning of testing methodologies and signified the importance of testing in a variety of methods.
 
