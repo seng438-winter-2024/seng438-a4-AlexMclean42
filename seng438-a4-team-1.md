@@ -142,7 +142,7 @@
 # Analysis drawn on the effectiveness of each of the test classes
 ## **DataUtilitesTest**
 
-When looking at the coverage for DataUtilites ****from assignment 3 to assignment 4 we can see that our Branch Coverage went from 84.4% to 97.9%, our Method Coverage stayed at 100.0% and our Statement Coverage went from 89.9% to 100%! When we ran the PiTest for DataUtilities based on the code from assignment 3 we got a mutation coverage of 89% which is very high! Meaning our test for DataUtilities were built good and accounted for mutants very well (even if we didn’t try too). So we wrote some test cases targeted at mutants that survived which allowed us to increase our DataUtilities mutation coverage to 91%, which isn’t a very large increase but we had a lot of problems with increasing this number due to the large amount of surviving equivalent mutants. 
+When looking at the coverage for DataUtilites from assignment 3 to assignment 4 we can see that our Branch Coverage went from 84.4% to 97.9%, our Method Coverage stayed at 100.0% and our Statement Coverage went from 89.9% to 100%! When we ran the PiTest for DataUtilities based on the code from assignment 3 we got a mutation coverage of 89% which is very high! Meaning our test for DataUtilities were built good and accounted for mutants very well (even if we didn’t try too). So we wrote some test cases targeted at mutants that survived which allowed us to increase our DataUtilities mutation coverage to 91%, which isn’t a very large increase but we had a lot of problems with increasing this number due to the large amount of surviving equivalent mutants. 
 
 ## **RangeTest**
 
@@ -186,6 +186,16 @@ Some of the test that we added for combineIgnoringNaN were testing `Mutated beha
 ```
 
 We also improve the mutation score of the test suites by removing redundant test cases. One issue we had with increasing the mutation score was equivalent mutants and how we were not able to always test that certain mutant. We ended up getting our mutation score to 67% for range and we believe that we may be able to further increase that value!
+
+## **For DataUtilities**
+
+Our mutation score from lab 3 was 89%, so that means that we already have a really good mutation score, which may be hard to further improve! The first thing we did as a group was look at each PIT Mutations, and which bugs survived. This helped us identify which methods had more surviving mutations or had less surviving mutations. Through looking them, we saw that there was **`4`** main methods that had a lot of mutations, these were:
+
+- equal(double[][] a, double[][] b)
+- calculateRowTotal(Values2D data, int row)
+- createNumberArray(double[] data)
+
+But we quickly ran into a problem in the testing as many of the surviving mutationing were equivalent mutants, such that we were not able to test to many of these. For example, as mentioned above, one equivalent mutant that I noticed a lot was “substituting 1 with -1” where they want to test substituting 1 with -1. But In the case of `return (b == null);`, the mutation simply substitutes 1 with -1, which changes the condition to `return (b == -1);`. However, this mutated condition doesn't make logical sense in the context of checking for null. Which proves that not all mutants are testable. After writing and waiting a very long time for PiTest to run, we were able to increase our DataUtilities class from 89% mutant coverage to 91% mutant coverage!
 
 # Why do we need mutation testing? Advantages and disadvantages of mutation testing
 We use mutation testing to evaluate the quality and effectiveness of software test suites. It involves introducing small changes (mutations) to the source code and running the test suite against these mutated versions to determine if the tests detect the changes. Advantages and disadvantages of mutation testing:
