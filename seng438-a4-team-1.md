@@ -118,22 +118,22 @@
 ## DataUtilities Class - Lab 4 Statistics (New)
 ### Branch Coverage Metric
 <div style="background-color: #f0f0f0; width: 800px;">
-    <img src="CoverageMetricScreenshots/Up.png" alt="DataUtilities Branch Coverage" width="800"/>
+    <img src="CoverageMetricScreenshots/UpdatedDataUtilitiesBranch.png" alt="DataUtilities Branch Coverage" width="800"/>
 </div>
 
 ### Method Coverage Metric
 <div style="background-color: #f0f0f0; width: 800px;">
-    <img src="CoverageMetricScreenshots/Up.png" alt="DataUtilities Method Coverage" width="800"/>
+    <img src="CoverageMetricScreenshots/UpdatedDataUtilitiesMethod.png" alt="DataUtilities Method Coverage" width="800"/>
 </div>
 
 ### Statement Coverage Metric
 <div style="background-color: #f0f0f0; width: 800px;">
-    <img src="CoverageMetricScreenshots/Up.png" alt="DataUtilities Statement Coverage" width="800"/>
+    <img src="CoverageMetricScreenshots/UpdatedDataUtilitiesStatement.png" alt="DataUtilities Statement Coverage" width="800"/>
 </div>
 
 ## DataUtilities Class - Lab 4 Mutation Score (New)
 <div style="background-color: #f0f0f0; width: 800px;">
-    <img src="CoverageMetricScreenshots/Up.png" alt="DataUtilities Mutation" width="800"/>
+    <img src="CoverageMetricScreenshots/Data91.png" alt="DataUtilities Mutation" width="800"/>
 </div>
 
 
