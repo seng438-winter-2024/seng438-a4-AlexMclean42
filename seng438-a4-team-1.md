@@ -278,6 +278,8 @@ During the development of the Selenium tests we all used Assertions and Checkpoi
         - Verify that the correct product is saved and is listed.
     - Test Data:
         - Save searches for different product categories.
+        - Save Search for one Product
+        - Save Search for more than one Product
     - Expected Outcome:
         - Verify that searches are saved to the saved searches page.
 7. Click on the "Sign up" link.
