@@ -233,12 +233,12 @@ During the development of the Selenium tests we all used Assertions and Checkpoi
         - Perform a search for a product.
         - Sort the search results by sort criteria.
         - Verify that the search results are displayed matching to the sort criteria.
+        - Click the most expense and cheepest
     - Test Data:
         - Sort by ascending order (price low to high) 
         - Sort by descending order (price high to low)
-        - Search for a popular products.
     - Expected Outcome:
-        - Verify that sorting by price displays search results matching sort criteria
+        - Verify that you clicked on the correct item and it was the cheepest/most expensive.
 2. View Product Details:
     - Test functionalities:
         - Navigate to a product page.
@@ -286,7 +286,6 @@ During the development of the Selenium tests we all used Assertions and Checkpoi
         - Verify that the correct product is saved and is listed.
     - Test Data:
         - Save searches for different product categories.
-        - Save Search for one Product
         - Save Search for more than one Product
     - Expected Outcome:
         - Verify that searches are saved to the saved searches page.
