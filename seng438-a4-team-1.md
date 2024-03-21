@@ -202,7 +202,7 @@ We use mutation testing to evaluate the quality and effectiveness of software te
 # Explain your SELENUIM test case design process
 Our design process to create and execute tests on [`https://www.ebay.com/`](https://www.ebay.com/), was to come up with 8 different functionalities of the application (What a customer/user would do on the site), which were:
 
-1. Sort Search Results:
+1. Sort Search Results: Hamd
 2. View Product Details:
 3. Add Item to Watchlist: - Dom
 4. Purchase Item: - Dom
