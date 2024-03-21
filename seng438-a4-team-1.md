@@ -187,7 +187,7 @@ Some of the test that we added for combineIgnoringNaN were testing `Mutated beha
 
 We also improve the mutation score of the test suites by removing redundant test cases. One issue we had with increasing the mutation score was equivalent mutants and how we were not able to always test that certain mutant. We ended up getting our mutation score to 67% for range and we believe that we may be able to further increase that value!
 
-## **For DataUtilities**
+## **DataUtilities Test Suite**
 
 Our mutation score from lab 3 was 89%, so that means that we already have a really good mutation score, which may be hard to further improve! The first thing we did as a group was look at each PIT Mutations, and which bugs survived. This helped us identify which methods had more surviving mutations or had less surviving mutations. Through looking them, we saw that there was **`4`** main methods that had a lot of mutations, these were:
 
