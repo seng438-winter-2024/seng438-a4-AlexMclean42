@@ -1,0 +1,295 @@
+{
+  "id": "10797c88-e0e7-4037-9db9-447e78f3cf4b",
+  "version": "2.0",
+  "name": "Sort Search Results",
+  "url": "https://www.ebay.com/",
+  "tests": [{
+    "id": "9e73ff66-8bb1-4b81-a9cd-e1702cdad00f",
+    "name": "Sort by price (Highest to Lowest)",
+    "commands": [{
+      "id": "ec4a6a88-597e-4e53-9154-f67a7d20ff84",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ebay.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b7e27cf-9f89-4720-a140-a1b6ebf8ead8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1250x829",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6dfdea6-94c5-46cc-9951-b350318cd8af",
+      "comment": "",
+      "command": "click",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2738baf5-14bd-48b5-b470-8d317c6ab443",
+      "comment": "",
+      "command": "type",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "lego minifigures"
+    }, {
+      "id": "e214c594-9f92-48b4-9f28-a6d0830dbeaf",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "5d974b63-37da-425b-9789-5ab719749fae",
+      "comment": "",
+      "command": "pause",
+      "target": "1500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f1adc2cb-b9be-4db0-b92e-be54be24bc35",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@aria-label='Sort selector. Best Match selected.']",
+      "targets": [
+        ["css=#nid-q1j-23 .btn__cell > span", "css:finder"],
+        ["xpath=//span[@id='nid-q1j-23']/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/span/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16aca695-7f7e-468f-8770-0fe17c3a8545",
+      "comment": "",
+      "command": "pause",
+      "target": "1500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9bacda0-c0c5-4d95-b330-9a7079df379c",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(5) > .fake-menu-button__item > span",
+      "targets": [
+        ["css=li:nth-child(5) > .fake-menu-button__item > span", "css:finder"],
+        ["xpath=//ul[@id='s0-55-19-5-4[0]-70-39-1-content-menu']/li[5]/a/span", "xpath:idRelative"],
+        ["xpath=//span/ul/li[5]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe31f14d-fbb8-4411-9404-d7059e36a4f3",
+      "comment": "",
+      "command": "pause",
+      "target": "1500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e41ec9c3-9309-480a-b347-f8756588cf59",
+      "comment": "",
+      "command": "click",
+      "target": "css=#item290324509f img",
+      "targets": [
+        ["css=#item290324509f img", "css:finder"],
+        ["xpath=//img[@alt='Lego City And Minifigures Custom Rare The Ultimate Lot']", "xpath:img"],
+        ["xpath=//li[@id='item290324509f']/div/div/div/a/div/img", "xpath:idRelative"],
+        ["xpath=//li[2]/div/div/div/a/div/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3537",
+      "windowTimeout": 2000
+    }, {
+      "id": "99b1c559-51c6-4672-8b32-a176d868fdaf",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3537}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a512b6c3-4074-4e49-bbe1-72d667f4139f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=h1.x-item-title__mainTitle > span.ux-textspans.ux-textspans--BOLD",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc48d1bc-0bc8-46e5-bbc3-3e6cc77f5dc7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1.x-item-title__mainTitle > span.ux-textspans.ux-textspans--BOLD",
+      "targets": [],
+      "value": "Lego City And Minifigures Custom Rare The Ultimate Lot"
+    }]
+  }, {
+    "id": "ce43d1aa-6aeb-400d-9941-1d936f76fd2c",
+    "name": "Sort by price (Lowest to Highest) ",
+    "commands": [{
+      "id": "53d4cb82-762d-4e55-ab9e-df6c677f673b",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ebay.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd9e48d0-981b-45b5-9921-2889b99abb7d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1250x829",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef462a89-d538-4191-b324-a51438ab699e",
+      "comment": "",
+      "command": "click",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1fd76ac-ba76-4137-9d82-e85ed0b73255",
+      "comment": "",
+      "command": "type",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "lego minifigures"
+    }, {
+      "id": "21113215-206d-44bc-98f8-421e589cabfd",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "f0b3a074-a737-48c5-ab9a-78f512bbc154",
+      "comment": "",
+      "command": "pause",
+      "target": "1500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a732a412-aaa8-4b54-8234-8624036f97a0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@aria-label='Sort selector. Best Match selected.']",
+      "targets": [
+        ["css=#nid-q1j-23 .btn__cell > span", "css:finder"],
+        ["xpath=//span[@id='nid-q1j-23']/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/span/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fc0c8ca-8ea9-4b46-b04e-aded378c529b",
+      "comment": "",
+      "command": "pause",
+      "target": "1500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "488e775c-378b-44b0-bc5e-b45a10312266",
+      "comment": "",
+      "command": "click",
+      "target": "css=#s0-55-19-5-4\\[0\\]-70-39-1-content-menu > li:nth-child(4) span",
+      "targets": [
+        ["css=li:nth-child(5) > .fake-menu-button__item > span", "css:finder"],
+        ["xpath=//ul[@id='s0-55-19-5-4[0]-70-39-1-content-menu']/li[5]/a/span", "xpath:idRelative"],
+        ["xpath=//span/ul/li[5]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c65a43f-cd96-49b1-ab85-dce3bd3e8b57",
+      "comment": "",
+      "command": "pause",
+      "target": "1500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ed1c9eb-af50-4ad3-a72c-e63c2be83ede",
+      "comment": "",
+      "command": "click",
+      "target": "css=#item2b639b6d37 img",
+      "targets": [
+        ["css=#item2b639b6d37 img", "css:finder"],
+        ["xpath=//img[@alt='Lego minifigures series 2: Witch']", "xpath:img"],
+        ["xpath=//li[@id='item2b639b6d37']/div/div/div/a/div/img", "xpath:idRelative"],
+        ["xpath=//li[3]/div/div/div/a/div/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win5471",
+      "windowTimeout": 2000
+    }, {
+      "id": "1968b250-c043-406c-83bc-dc7695eda1b8",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win5471}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de5d7446-8daf-429f-ac62-7f5bb863307e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=h1.x-item-title__mainTitle > span.ux-textspans.ux-textspans--BOLD",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4526527d-f91e-4969-b531-c54a1336164f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1.x-item-title__mainTitle > span.ux-textspans.ux-textspans--BOLD",
+      "targets": [],
+      "value": "Lego minifigures series 2: Witch"
+    }]
+  }],
+  "suites": [{
+    "id": "bb7bd68f-8028-483c-b274-9bcc31e53735",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9e73ff66-8bb1-4b81-a9cd-e1702cdad00f"]
+  }],
+  "urls": ["https://www.ebay.com/"],
+  "plugins": []
+}
