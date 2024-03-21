@@ -213,21 +213,18 @@ We use mutation testing to evaluate the quality and effectiveness of software te
 # Explain your SELENUIM test case design process
 Our design process to create and execute tests on [`https://www.ebay.com/`](https://www.ebay.com/), was to come up with 8 different functionalities of the application (What a customer/user would do on the site), which were:
 
-1. Sort Search Results: Hamd
-2. View Product Details:
-3. Add Item to Watchlist: - Dom
-4. Purchase Item: - Dom
-5. Manage Account Settings:
-6. Create a Saved Search: Hamd
-7. Click on the "Sign up" link. - Alex 
-8. Click on the "Sign In" link. - Alex
+1. Sort Search Results - Hamd
+2. View Product Details - Noel
+3. Add Item to Watchlist - Dom
+4. Purchase Item - Dom
+5. Manage Account Settings - Noel
+6. Create a Saved Search - Hamd
+7. Click on the "Sign up" link - Alex 
+8. Click on the "Sign In" link - Alex
 
 
 # Explain the use of assertions and checkpoints
-During the development of the Selenium tests we all used Assertions and Checkpoints to check the scripts to see if they match the expected value. The reason we use assertions and checkpoints is to validate the correctness of the application's behavior/look and ensure that it meets the requirements of what we want. This allows for testers to automatically verify the output of tests and detect any deviations from expected behavior/look.
-
-- We mainly used assertions for checking a single value to see if it matches what we expected.
-- And we mainly used checkpoints to identify the content of the page visually, as it uses Image processing and AI to compare the entire page image to the reference image
+During the development of the Selenium tests we all used Assertions and Checkpoints to check the scripts to see if they match the expected value. In Selenium, checkpoints were automatically done as the code ran and we were all able to follow these checkpoints very easily to validate the program! We mainly used assertions to validate the correctness of the application, this was done manually through assert statements such as assert value, assert element present, and assert element not present. We usually did this at the end of the program to validate the result, such as seeing if the user signed in correctly (displays there first name in the top left corner) or checking to see if a selected item to wishlist matches the same item on the wishlist. This allowed for us to automatically verify the output of tests and detect any deviations from expected behavior/look.
 
 # how did you test each functionaity with different test data
 
@@ -258,18 +255,18 @@ During the development of the Selenium tests we all used Assertions and Checkpoi
     - Test Data:
         - Select products with different categories and price ranges.
     - Expected Outcome:
-        - Confirm that items are successfully added to the watchlist.
+        - Confirm that items are successfully added to the watchlist (done with comparing the products name)
 4. Purchase Item:
     - Test functionalities:
         - Navigate to a product page.
         - Enter the desired quantity.
         - Click on the "Buy It Now" button.
-        - Proceed through the checkout process by entering shipping and payment details….
+        - Proceed through the checkout process by entering shipping and payment details (we did not enter valid details lol)
     - Test Data:
         - Select different products with varying prices.
-        - Use different shipping addresses and payment methods.
+        - Tested with different payment methods (to an extent as we did not enter valid details)
     - Expected Outcome:
-        - Validate successful purchase completion, including order confirmation.
+        - Validate successful purchase completion (we would expect if we actually purchased item(
 5. Manage Account Settings:
     - Test functionalities:
         - Click on the user profile icon.
@@ -301,7 +298,7 @@ During the development of the Selenium tests we all used Assertions and Checkpoi
         - Register a New Account.
     - Test Data:
         - Register with valid credentials.
-        - Register with invalid or incomplete information.
+        - Register with invalid or incomplete information (not valid email, and not valid password)
     - Expected Outcome:
         - Confirm successful registration with valid data and appropriate error handling for invalid data.
 8. Click on the "Sign In" link.
@@ -312,15 +309,9 @@ During the development of the Selenium tests we all used Assertions and Checkpoi
         - Sign In to Account
     - Test Data:
         - Sign in with valid credentials.
-        - Sign in with incorrect password or username.
+        - Sign in with incorrect password or username (tried an email that had no account created)
     - Expected Outcome:
-        - Ensure successful login with valid credentials and appropriate error messages for incorrect login attempts.
-
-
-
-
-
-
+        - Ensure successful login with valid credentials and appropriate error message.
 
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
 - Advantages of Selenium:
