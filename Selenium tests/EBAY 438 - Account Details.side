@@ -1,0 +1,750 @@
+{
+  "id": "7bcca17d-4861-4ae5-a60f-bf1dbffc0d7d",
+  "version": "2.0",
+  "name": "EBAY 438 - Account Details",
+  "url": "https://www.ebay.ca",
+  "tests": [{
+    "id": "c1f8c939-2357-443c-94b2-afb341b1685a",
+    "name": "Account Details - Details Exist",
+    "commands": [{
+      "id": "777378e7-3a80-4699-bcb3-9f3364540468",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4edc58ed-bdb2-45d2-bb84-968231d1c706",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=gh-ug",
+      "targets": [
+        ["id=gh-ug", "id"],
+        ["css=#gh-ug", "css:finder"],
+        ["xpath=//button[@id='gh-ug']", "xpath:attributes"],
+        ["xpath=//li[@id='gh-eb-u']/button", "xpath:idRelative"],
+        ["xpath=//li/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Hi noel!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3eb267ef-80b9-4e7b-a1bf-15224d8abd73",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=gh-ug",
+      "targets": [
+        ["id=gh-ug", "id"],
+        ["css=#gh-ug", "css:finder"],
+        ["xpath=//button[@id='gh-ug']", "xpath:attributes"],
+        ["xpath=//li[@id='gh-eb-u']/button", "xpath:idRelative"],
+        ["xpath=//li/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Hi noel!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec77009f-2f14-4c1e-b553-4c74da87f5f5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.gh-eb-arw:nth-child(2)",
+      "targets": [
+        ["css=.gh-eb-arw:nth-child(2)", "css:finder"],
+        ["xpath=//button[@id='gh-ug']/b[2]", "xpath:idRelative"],
+        ["xpath=//b[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5706e204-48ad-4dd0-9d54-aa4039e51cc8",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.gh-eb-arw:nth-child(2)",
+      "targets": [
+        ["css=.gh-eb-arw:nth-child(2)", "css:finder"],
+        ["xpath=//button[@id='gh-ug']/b[2]", "xpath:idRelative"],
+        ["xpath=//b[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7834fda-fbcd-4614-8c72-02cd60c47950",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Account settings",
+      "targets": [
+        ["linkText=Account settings", "linkText"],
+        ["css=#gh-uac > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Account settings')]", "xpath:link"],
+        ["xpath=//li[@id='gh-uac']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://accountsettings.ebay.ca/uas')]", "xpath:href"],
+        ["xpath=//div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Account settings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b89bde2d-4bbf-47e6-b78e-0846ecc35981",
+      "comment": "",
+      "command": "click",
+      "target": "id=account-settings-link-PI",
+      "targets": [
+        ["id=account-settings-link-PI", "id"],
+        ["linkText=Personal information", "linkText"],
+        ["css=#account-settings-link-PI", "css:finder"],
+        ["xpath=//a[contains(text(),'Personal information')]", "xpath:link"],
+        ["xpath=//a[@id='account-settings-link-PI']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div[2]/div/div[2]/div/div/div/div/div/div/div/div/div/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://accountsettings.ebay.ca/profile')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Personal information')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49547320-c15b-41d9-978c-607b8cba089e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=dispay_username",
+      "targets": [
+        ["id=dispay_username", "id"],
+        ["css=#dispay_username", "css:finder"],
+        ["xpath=//div[@id='dispay_username']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div[2]/div[2]/div/div[2]/div/div/div[2]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d72f4738-b162-4ed4-8f9f-7230e64c82e3",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=individual_account_type_value",
+      "targets": [
+        ["id=individual_account_type_value", "id"],
+        ["css=#individual_account_type_value", "css:finder"],
+        ["xpath=//div[@id='individual_account_type_value']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div[2]/div[2]/div/div[2]/div[3]/div[2]/div/span/div/div/div", "xpath:idRelative"],
+        ["xpath=//span/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ced3100e-1eeb-4689-bb72-ca6f9fc81151",
+    "name": "Account Details - Update Name Valid",
+    "commands": [{
+      "id": "1e1305e9-8fc5-4104-a57e-c8a66a248c76",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "819c523c-62c2-4c71-91f3-777da09c5ea2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=gh-ug",
+      "targets": [
+        ["id=gh-ug", "id"],
+        ["css=#gh-ug", "css:finder"],
+        ["xpath=//button[@id='gh-ug']", "xpath:attributes"],
+        ["xpath=//li[@id='gh-eb-u']/button", "xpath:idRelative"],
+        ["xpath=//li/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Hi noel!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49b8ed3d-a22d-43eb-9c82-9b3102632949",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=gh-ug",
+      "targets": [
+        ["id=gh-ug", "id"],
+        ["css=#gh-ug", "css:finder"],
+        ["xpath=//button[@id='gh-ug']", "xpath:attributes"],
+        ["xpath=//li[@id='gh-eb-u']/button", "xpath:idRelative"],
+        ["xpath=//li/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Hi noel!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "98d01faf-cba8-4026-84ac-9c7f64152e41",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Account settings",
+      "targets": [
+        ["linkText=Account settings", "linkText"],
+        ["css=#gh-uac > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Account settings')]", "xpath:link"],
+        ["xpath=//li[@id='gh-uac']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://accountsettings.ebay.ca/uas')]", "xpath:href"],
+        ["xpath=//div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Account settings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "689ecaf2-cfd0-45c8-a115-a0ad3d6f9fb4",
+      "comment": "",
+      "command": "click",
+      "target": "id=account-settings-link-PI",
+      "targets": [
+        ["id=account-settings-link-PI", "id"],
+        ["linkText=Personal information", "linkText"],
+        ["css=#account-settings-link-PI", "css:finder"],
+        ["xpath=//a[contains(text(),'Personal information')]", "xpath:link"],
+        ["xpath=//a[@id='account-settings-link-PI']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div[2]/div/div[2]/div/div/div/div/div/div/div/div/div/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://accountsettings.ebay.ca/profile')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Personal information')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "266b2b80-bbba-4803-a9fa-b74905fab787",
+      "comment": "",
+      "command": "click",
+      "target": "id=individual_personal_info_address_edit_button",
+      "targets": [
+        ["id=individual_personal_info_address_edit_button", "id"],
+        ["css=#individual_personal_info_address_edit_button", "css:finder"],
+        ["xpath=//button[@id='individual_personal_info_address_edit_button']", "xpath:attributes"],
+        ["xpath=//div[@id='individual_personal_info']/div[2]/div/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec64b691-9963-4a7a-a64b-be540bd32138",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//form[@id='individualInfo-addressForm']/div/div/div/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "noel!$#@"
+    }, {
+      "id": "54c0c352-9142-4c12-a13c-a4a33fe713aa",
+      "comment": "",
+      "command": "click",
+      "target": "id=address_edit_submit_button",
+      "targets": [
+        ["id=address_edit_submit_button", "id"],
+        ["css=#address_edit_submit_button", "css:finder"],
+        ["xpath=//button[@id='address_edit_submit_button']", "xpath:attributes"],
+        ["xpath=//form[@id='individualInfo-addressForm']/div[2]/span[2]/button", "xpath:idRelative"],
+        ["xpath=//span[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9d8f7b4-c828-4eb8-8850-95ce1b8372e7",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "css=.inline-notice",
+      "targets": [
+        ["css=.inline-notice", "css:finder"],
+        ["xpath=//div[@id='individual_personal_info']/div[2]/div/div/div/span/div[2]", "xpath:idRelative"],
+        ["xpath=//span/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4da8bf16-7147-446d-98ff-23f2665e4abf",
+    "name": "Account Details - Update Name Invalid",
+    "commands": [{
+      "id": "0725823e-0093-43a0-a1ec-c941dda2d1bb",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef9aca2e-f912-496d-897e-31c85ea189fe",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=gh-ug",
+      "targets": [
+        ["id=gh-ug", "id"],
+        ["css=#gh-ug", "css:finder"],
+        ["xpath=//button[@id='gh-ug']", "xpath:attributes"],
+        ["xpath=//li[@id='gh-eb-u']/button", "xpath:idRelative"],
+        ["xpath=//li/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Hi noel!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "84145295-cdef-41ee-97d2-ae382ce1bc86",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=gh-ug",
+      "targets": [
+        ["id=gh-ug", "id"],
+        ["css=#gh-ug", "css:finder"],
+        ["xpath=//button[@id='gh-ug']", "xpath:attributes"],
+        ["xpath=//li[@id='gh-eb-u']/button", "xpath:idRelative"],
+        ["xpath=//li/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Hi noel!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9e6d12c-317c-4c11-87c5-2079819798d7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Account settings",
+      "targets": [
+        ["linkText=Account settings", "linkText"],
+        ["css=#gh-uac > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Account settings')]", "xpath:link"],
+        ["xpath=//li[@id='gh-uac']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://accountsettings.ebay.ca/uas')]", "xpath:href"],
+        ["xpath=//div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Account settings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d243baf2-b70f-43f5-a41c-34bd40076a09",
+      "comment": "",
+      "command": "click",
+      "target": "id=account-settings-link-PI",
+      "targets": [
+        ["id=account-settings-link-PI", "id"],
+        ["linkText=Personal information", "linkText"],
+        ["css=#account-settings-link-PI", "css:finder"],
+        ["xpath=//a[contains(text(),'Personal information')]", "xpath:link"],
+        ["xpath=//a[@id='account-settings-link-PI']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div[2]/div/div[2]/div/div/div/div/div/div/div/div/div/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://accountsettings.ebay.ca/profile')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Personal information')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "621835bd-6f3f-42bf-8b6e-450fabf6e553",
+      "comment": "",
+      "command": "click",
+      "target": "id=individual_personal_info_address_edit_button",
+      "targets": [
+        ["id=individual_personal_info_address_edit_button", "id"],
+        ["css=#individual_personal_info_address_edit_button", "css:finder"],
+        ["xpath=//button[@id='individual_personal_info_address_edit_button']", "xpath:attributes"],
+        ["xpath=//div[@id='individual_personal_info']/div[2]/div/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbea3042-3118-4efd-acdc-1f1a326fee88",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//form[@id='individualInfo-addressForm']/div/div/div/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "noel"
+    }, {
+      "id": "60926587-52cb-43c8-991f-725e80cb5549",
+      "comment": "",
+      "command": "click",
+      "target": "id=address_edit_submit_button",
+      "targets": [
+        ["id=address_edit_submit_button", "id"],
+        ["css=#address_edit_submit_button", "css:finder"],
+        ["xpath=//button[@id='address_edit_submit_button']", "xpath:attributes"],
+        ["xpath=//form[@id='individualInfo-addressForm']/div[2]/span[2]/button", "xpath:idRelative"],
+        ["xpath=//span[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e26ec6f-fed9-4449-b7ca-1e51c6649b03",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.inline-notice",
+      "targets": [
+        ["css=.inline-notice", "css:finder"],
+        ["xpath=//div[@id='individual_personal_info']/div[2]/div/div/div/span/div[2]", "xpath:idRelative"],
+        ["xpath=//span/div[2]", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "005a6201-c0c0-43e0-8e4c-599e7f3cd134",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.inline-notice",
+      "targets": [
+        ["css=.inline-notice", "css:finder"],
+        ["xpath=//div[@id='individual_personal_info']/div[2]/div/div/div/span/div[2]", "xpath:idRelative"],
+        ["xpath=//span/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e7f12048-1c28-4d6d-a931-e79e2638bec4",
+    "name": "Account Details - Update Address Valid",
+    "commands": [{
+      "id": "d375cf3d-1b95-4dc6-b300-7941cbac25fa",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21520321-d6d4-49e5-90f3-7f04a98366a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#gh-ug > b:nth-child(1)",
+      "targets": [
+        ["css=#gh-ug > b:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='gh-ug']/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'noel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7bad8b4-63df-413b-a6c6-0a792503421b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Account settings",
+      "targets": [
+        ["linkText=Account settings", "linkText"],
+        ["css=#gh-uac > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Account settings')]", "xpath:link"],
+        ["xpath=//li[@id='gh-uac']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://accountsettings.ebay.ca/uas')]", "xpath:href"],
+        ["xpath=//div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Account settings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "999a56f2-aa0b-4ec4-af8b-af140f1c557f",
+      "comment": "",
+      "command": "click",
+      "target": "id=account-settings-link-ADDR",
+      "targets": [
+        ["id=account-settings-link-ADDR", "id"],
+        ["linkText=Addresses", "linkText"],
+        ["css=#account-settings-link-ADDR", "css:finder"],
+        ["xpath=//a[contains(text(),'Addresses')]", "xpath:link"],
+        ["xpath=//a[@id='account-settings-link-ADDR']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div[2]/div/div[2]/div/div/div/div/div/div/div/div/div/div[2]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://accountsettings.ebay.ca/uas/addresses')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Addresses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b20777af-030a-4e22-95af-4d3fe83149d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.primaryShipAddress .fake-btn",
+      "targets": [
+        ["css=.primaryShipAddress .fake-btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'Edit')])[2]", "xpath:link"],
+        ["xpath=//div[@id='mainContent']/div/div/div[2]/div/div/div/div/div/div/div/section/div/div/div[2]/div[2]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://settings3.ebay.ca/address/display?type=SHIPPING')]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a334f781-2e64-4756-be18-483202808fe8",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-additional-address-link-SHIPPING",
+      "targets": [
+        ["id=add-additional-address-link-SHIPPING", "id"],
+        ["linkText=Add another address", "linkText"],
+        ["css=#add-additional-address-link-SHIPPING", "css:finder"],
+        ["xpath=//a[contains(text(),'Add another address')]", "xpath:link"],
+        ["xpath=//a[@id='add-additional-address-link-SHIPPING']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/address/add?type=SHIPPING')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add another address')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0b84b5c-978f-4e6d-9283-7524eaae3692",
+      "comment": "",
+      "command": "type",
+      "target": "id=s0-0-17-6-name-field-name-field",
+      "targets": [
+        ["id=s0-0-17-6-name-field-name-field", "id"],
+        ["name=name-field", "name"],
+        ["css=#s0-0-17-6-name-field-name-field", "css:finder"],
+        ["xpath=//input[@id='s0-0-17-6-name-field-name-field']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[2]/div/form/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "PO Box"
+    }, {
+      "id": "9181c261-1938-4f9a-8e63-2f3f29388e09",
+      "comment": "",
+      "command": "type",
+      "target": "id=s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field",
+      "targets": [
+        ["id=s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field", "id"],
+        ["name=addressLine1-field", "name"],
+        ["css=#s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field", "css:finder"],
+        ["xpath=//input[@id='s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[2]/div/form/div[3]/span/span/input", "xpath:idRelative"],
+        ["xpath=//span/span/input", "xpath:position"]
+      ],
+      "value": "2500 University Dr NW"
+    }, {
+      "id": "90dcb86d-80e9-4ced-9cea-91ae5a6b0bb9",
+      "comment": "",
+      "command": "type",
+      "target": "id=s0-0-17-6-city-field-city-field",
+      "targets": [
+        ["id=s0-0-17-6-city-field-city-field", "id"],
+        ["name=city-field", "name"],
+        ["css=#s0-0-17-6-city-field-city-field", "css:finder"],
+        ["xpath=//input[@id='s0-0-17-6-city-field-city-field']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[2]/div/form/div[4]/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/span/span/input", "xpath:position"]
+      ],
+      "value": "Calgary"
+    }, {
+      "id": "0fb67f28-4c72-4657-ab03-cb11a3de0e8b",
+      "comment": "",
+      "command": "select",
+      "target": "id=stateDD",
+      "targets": [],
+      "value": "label=Alberta"
+    }, {
+      "id": "4d33dcba-72b0-4de1-8fda-fe6a247bfc8c",
+      "comment": "",
+      "command": "type",
+      "target": "id=s0-0-17-6-zipCode-field-zipCode-field",
+      "targets": [
+        ["id=s0-0-17-6-zipCode-field-zipCode-field", "id"],
+        ["name=zipCode-field", "name"],
+        ["css=#s0-0-17-6-zipCode-field-zipCode-field", "css:finder"],
+        ["xpath=//input[@id='s0-0-17-6-zipCode-field-zipCode-field']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[2]/div/form/div[4]/div/span[3]/input", "xpath:idRelative"],
+        ["xpath=//span[3]/input", "xpath:position"]
+      ],
+      "value": "T2N 1N4"
+    }, {
+      "id": "56114d3b-5aa0-4e1a-a424-56a8c09561d4",
+      "comment": "",
+      "command": "type",
+      "target": "id=phoneFlagComp1",
+      "targets": [
+        ["id=phoneFlagComp1", "id"],
+        ["name=phoneFlagComp1", "name"],
+        ["css=#phoneFlagComp1", "css:finder"],
+        ["xpath=//input[@id='phoneFlagComp1']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[3]/div/form/div[5]/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "(587) 123-1234"
+    }, {
+      "id": "defe923c-58f2-42c1-84c2-845c84d9ca45",
+      "comment": "",
+      "command": "click",
+      "target": "id=save-address-btn",
+      "targets": [
+        ["id=save-address-btn", "id"],
+        ["css=#save-address-btn", "css:finder"],
+        ["xpath=//button[@id='save-address-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[3]/div/form/div[6]/span[2]/button", "xpath:idRelative"],
+        ["xpath=//span[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5c7aaa6-714a-4728-9ae8-1593d383be39",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='pageHeading']/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Shipping addresses')]", "xpath:innerText"]
+      ],
+      "value": "Shipping addresses"
+    }]
+  }, {
+    "id": "3bcdfb58-e56b-46e0-8172-c84e74798a5e",
+    "name": "Account Details - Update Address Invalid",
+    "commands": [{
+      "id": "d58ed6a8-3d03-4589-b389-82440263ca14",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b1aea2c-af2d-419a-9754-4e2258b80de3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#gh-ug > b:nth-child(1)",
+      "targets": [
+        ["css=#gh-ug > b:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='gh-ug']/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'noel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4011d755-37cd-4625-9848-414bf81d0460",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Account settings",
+      "targets": [
+        ["linkText=Account settings", "linkText"],
+        ["css=#gh-uac > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Account settings')]", "xpath:link"],
+        ["xpath=//li[@id='gh-uac']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://accountsettings.ebay.ca/uas')]", "xpath:href"],
+        ["xpath=//div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Account settings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b97b0d73-2d9d-4a65-829e-bd6662283047",
+      "comment": "",
+      "command": "click",
+      "target": "id=account-settings-link-ADDR",
+      "targets": [
+        ["id=account-settings-link-ADDR", "id"],
+        ["linkText=Addresses", "linkText"],
+        ["css=#account-settings-link-ADDR", "css:finder"],
+        ["xpath=//a[contains(text(),'Addresses')]", "xpath:link"],
+        ["xpath=//a[@id='account-settings-link-ADDR']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div[2]/div/div[2]/div/div/div/div/div/div/div/div/div/div[2]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://accountsettings.ebay.ca/uas/addresses')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Addresses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a96b44f2-3758-4691-9ba0-0b849e2b521c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.primaryShipAddress .fake-btn",
+      "targets": [
+        ["css=.primaryShipAddress .fake-btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'Edit')])[2]", "xpath:link"],
+        ["xpath=//div[@id='mainContent']/div/div/div[2]/div/div/div/div/div/div/div/section/div/div/div[2]/div[2]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://settings3.ebay.ca/address/display?type=SHIPPING')]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba92063a-1cc6-4896-a6c1-8af9a729bf30",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-additional-address-link-SHIPPING",
+      "targets": [
+        ["id=add-additional-address-link-SHIPPING", "id"],
+        ["linkText=Add another address", "linkText"],
+        ["css=#add-additional-address-link-SHIPPING", "css:finder"],
+        ["xpath=//a[contains(text(),'Add another address')]", "xpath:link"],
+        ["xpath=//a[@id='add-additional-address-link-SHIPPING']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/address/add?type=SHIPPING')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add another address')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cd816c0-a44f-4800-bff4-7f0a6373b05a",
+      "comment": "",
+      "command": "type",
+      "target": "id=s0-0-17-6-name-field-name-field",
+      "targets": [
+        ["id=s0-0-17-6-name-field-name-field", "id"],
+        ["name=name-field", "name"],
+        ["css=#s0-0-17-6-name-field-name-field", "css:finder"],
+        ["xpath=//input[@id='s0-0-17-6-name-field-name-field']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[2]/div/form/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "PO Box"
+    }, {
+      "id": "912442e2-95e3-4aa9-bee9-8334644ca394",
+      "comment": "",
+      "command": "type",
+      "target": "id=s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field",
+      "targets": [
+        ["id=s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field", "id"],
+        ["name=addressLine1-field", "name"],
+        ["css=#s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field", "css:finder"],
+        ["xpath=//input[@id='s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[2]/div/form/div[3]/span/span/input", "xpath:idRelative"],
+        ["xpath=//span/span/input", "xpath:position"]
+      ],
+      "value": "2500 University Dr NW"
+    }, {
+      "id": "0bb092dd-a283-404d-a6c9-e40cd0715791",
+      "comment": "",
+      "command": "click",
+      "target": "id=save-address-btn",
+      "targets": [
+        ["id=save-address-btn", "id"],
+        ["css=#save-address-btn", "css:finder"],
+        ["xpath=//button[@id='save-address-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div/div[3]/div/form/div[6]/span[2]/button", "xpath:idRelative"],
+        ["xpath=//span[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9ea5e34-3f30-4009-b667-0fcf9184fea5",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.citycss > span",
+      "targets": [
+        ["css=.citycss > span", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div/div[3]/div/form/div[4]/div/span/span/div/span", "xpath:idRelative"],
+        ["xpath=//span/div/span", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "d0b8f622-13ee-4344-8d3c-b06f5dc784ff",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.citycss > span",
+      "targets": [
+        ["css=.citycss > span", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div/div[3]/div/form/div[4]/div/span/span/div/span", "xpath:idRelative"],
+        ["xpath=//span/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "313aeb29-9266-4ea8-92fc-a130291dd486",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.error:nth-child(2) > span",
+      "targets": [
+        ["css=.error:nth-child(2) > span", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div/div[3]/div/form/div[4]/div/span[2]/span/div/span/div/span", "xpath:idRelative"],
+        ["xpath=//div/span/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "abe4964b-6417-4fb5-9d39-18d768909398",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.zipcss > span",
+      "targets": [
+        ["css=.zipcss > span", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div/div[3]/div/form/div[4]/div/span[3]/div/span", "xpath:idRelative"],
+        ["xpath=//span[3]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2887da51-30b6-4227-95db-abffd21487a4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c1f8c939-2357-443c-94b2-afb341b1685a"]
+  }],
+  "urls": ["https://www.ebay.ca/"],
+  "plugins": []
+}

@@ -271,10 +271,10 @@ During the development of the Selenium tests we all used Assertions and Checkpoi
     - Test functionalities:
         - Click on the user profile icon.
         - Navigate to the account settings page.
-        - Update personal information such as address, email, or password.
+        - Update personal information such as address or username.
         - Verify that the changes are saved successfully.
     - Test Data:
-        - Update personal information (address, email, password) with valid and invalid data.
+        - Update personal information (address, name) with valid and invalid data.
     - Expected Outcome:
         - Ensure changes are saved correctly and validation messages appear for invalid data.
 6. Create a Saved Search:

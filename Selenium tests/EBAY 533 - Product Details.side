@@ -1,0 +1,386 @@
+{
+  "id": "b0cd4c63-39e6-4555-ba24-02fd8f10dfc7",
+  "version": "2.0",
+  "name": "EBAY 533 - Product Details",
+  "url": "https://www.ebay.ca",
+  "tests": [{
+    "id": "88abd13b-718b-4d83-b271-1f6fa72a4bd7",
+    "name": "Product Details - Electronics",
+    "commands": [{
+      "id": "f9a66dca-81ce-4278-beb2-28bca7832b60",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20277d6a-b289-45cb-aa31-9e5b2cf8c5f7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Electronics",
+      "targets": [
+        ["linkText=Electronics", "linkText"],
+        ["css=.vl-flyout-nav__js-show > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Electronics')])[2]", "xpath:link"],
+        ["xpath=//div[@id='vl-flyout-nav']/ul/li[9]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.ebay.ca/b/Electronics/bn_7000259124')])[2]", "xpath:href"],
+        ["xpath=//div[8]/div/ul/li[9]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3459ffe7-56fd-4978-b122-4ea8291eddb8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Computers & Tablets",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7fe82b24-0b73-428b-a766-64d40e68d85e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.carousel__snap-point:nth-child(1) > .b-tile-wrapper .b-img",
+      "targets": [
+        ["css=.carousel__snap-point:nth-child(1) > .b-tile-wrapper .b-img", "css:finder"],
+        ["xpath=//img[@alt='Lenovo LOQ 16\" RTX 4050 144HZ AMD Ryzen 5 7640HS 8GB RAM 512GB SSD']", "xpath:img"],
+        ["xpath=//ul[@id='s0-28_1-9-0-1[2]-0-0-4-list']/li/div/a/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[3]/section/div[2]/div/div/ul/li/div/a/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8530cee-ff5f-47f7-8524-ac06977eb5d2",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.x-item-title",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b37663e6-e4aa-4f2f-ab39-fb26ef377595",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.x-item-title__mainTitle > .ux-textspans",
+      "targets": [
+        ["css=.x-item-title__mainTitle > .ux-textspans", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div/div/h1/span", "xpath:idRelative"],
+        ["xpath=//h1/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Lenovo LOQ 16\" RTX 4050 144HZ AMD Ryzen 5 7640HS 8GB RAM 512GB SSD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "80eb21fd-6135-48a9-9bd7-97c43b3f00ef",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.x-price-primary > .ux-textspans",
+      "targets": [
+        ["css=.x-price-primary > .ux-textspans", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div[2]/div/div/div/div/div[2]/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'C $1,054.99')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "797e6aa8-7404-40c5-8f4d-52ef38929c3d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=mainImgHldr",
+      "targets": [
+        ["id=mainImgHldr", "id"],
+        ["css=#mainImgHldr", "css:finder"],
+        ["xpath=//div[@id='mainImgHldr']", "xpath:attributes"],
+        ["xpath=//div[@id='PicturePanel']/div/div/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd8ea345-78c0-49ef-a8fe-c3d56071e642",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.ux-layout-section-module-evo",
+      "targets": [
+        ["css=.ux-layout-section-module-evo", "css:finder"],
+        ["xpath=//div[@id='viTabs_0_is']/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div[3]/div[2]/div/div[2]/div/div/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bdabfaa9-51a5-4223-be32-e5be505786ba",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.d-stores-info-categories__container__info__section",
+      "targets": [
+        ["css=.d-stores-info-categories__container__info__section", "css:finder"],
+        ["xpath=//div[@id='LISTING_FRAME_MODULE']/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "658c3747-979f-40fa-84f2-a4887e9c1dfd",
+    "name": "Product Details - Fashion",
+    "commands": [{
+      "id": "821c1161-a8eb-4586-9e22-3e96270f498c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95b3407e-4f15-48d3-8eb5-9d5b57eda159",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Fashion",
+      "targets": [
+        ["linkText=Fashion", "linkText"],
+        ["css=.vl-flyout-nav__js-show > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Fashion')])[3]", "xpath:link"],
+        ["xpath=//div[@id='vl-flyout-nav']/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=//div[8]/div/ul/li[8]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37a40921-122f-4df9-a1d4-a4be02e2901a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Men's Clothing",
+      "targets": [
+        ["linkText=Men's Clothing", "linkText"],
+        ["css=.vl-flyout-nav__js-show .vl-flyout-nav__sub-cat-col:nth-child(1) li:nth-child(3) > .vl-flyout-nav__js-link", "css:finder"],
+        ["xpath=//div[@id='vl-flyout-nav']/ul/li[8]/div[2]/div/nav/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.ebay.ca/b/Mens-Clothing/1059/bn_696958')])[2]", "xpath:href"],
+        ["xpath=//li[8]/div[2]/div/nav/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef37c2b3-cf1c-47bc-9fc6-d4062bec8fa7",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,123)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9f7ca27-fef7-438c-b8f2-03efc961e575",
+      "comment": "",
+      "command": "click",
+      "target": "css=.b-visualnav__tile:nth-child(1) .b-img",
+      "targets": [
+        ["css=.b-visualnav__tile:nth-child(1) .b-img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://i.ebayimg.com/thumbs/images/g/2uAAAOSwUPlceeiL/s-l225.webp')]", "xpath:img"],
+        ["xpath=//div[@id='mainContent']/section/div[2]/span/a/div/img", "xpath:idRelative"],
+        ["xpath=//div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a3d3773-c9e5-4f32-8e2f-177e595686fe",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,139)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2719d0ca-bdca-4fea-92dd-d467ed0c3813",
+      "comment": "",
+      "command": "click",
+      "target": "css=.carousel__snap-point:nth-child(1) .b-img",
+      "targets": [
+        ["css=.carousel__snap-point:nth-child(1) .b-img", "css:finder"],
+        ["xpath=//img[@alt=\"Columbia Men's Woven Shirt PFG Blue Bonehead S/S (450)\"]", "xpath:img"],
+        ["xpath=//ul[@id='s0-28-9-0-1[1]-0-0-4-list']/li/div/a/div/div/img", "xpath:idRelative"],
+        ["xpath=//div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05e8ebca-cc08-48c4-9f64-86f86a864d8d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.x-item-title",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c635723f-83ba-4780-91d7-4880fde45905",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.x-item-title__mainTitle > .ux-textspans",
+      "targets": [
+        ["css=.x-item-title__mainTitle > .ux-textspans", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div/div/h1/span", "xpath:idRelative"],
+        ["xpath=//h1/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Lenovo LOQ 16\" RTX 4050 144HZ AMD Ryzen 5 7640HS 8GB RAM 512GB SSD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4610ff4-172f-4752-834a-a4347ea46621",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.x-price-primary > .ux-textspans",
+      "targets": [
+        ["css=.x-price-primary > .ux-textspans", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div[2]/div/div/div/div/div[2]/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'C $1,054.99')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c4a8f9e-9674-44fd-9ea9-eab9996e0b91",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=mainImgHldr",
+      "targets": [
+        ["id=mainImgHldr", "id"],
+        ["css=#mainImgHldr", "css:finder"],
+        ["xpath=//div[@id='mainImgHldr']", "xpath:attributes"],
+        ["xpath=//div[@id='PicturePanel']/div/div/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c21b843c-1c02-4b62-9170-805a209220c4",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.d-stores-info-categories__container__info__section",
+      "targets": [
+        ["css=.d-stores-info-categories__container__info__section", "css:finder"],
+        ["xpath=//div[@id='LISTING_FRAME_MODULE']/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "146189a1-8adc-4aa0-9fd0-c59683a907b9",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.ux-layout-section-module-evo",
+      "targets": [
+        ["css=.ux-layout-section-module-evo", "css:finder"],
+        ["xpath=//div[@id='viTabs_0_is']/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div[3]/div[2]/div/div[2]/div/div/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d5e10a39-8e09-4707-ab9e-887d29d24b70",
+    "name": "Product Details - Refurb Appliances",
+    "commands": [{
+      "id": "078398b3-e541-40ff-a8a3-592113c4546f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ded5f209-9053-4b05-860a-5c2af0fc6852",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=eBay Refurbished",
+      "targets": [
+        ["linkText=eBay Refurbished", "linkText"],
+        ["css=.vl-flyout-nav__js-show > a", "css:finder"],
+        ["xpath=//a[contains(text(),'eBay Refurbished')]", "xpath:link"],
+        ["xpath=//div[@id='vl-flyout-nav']/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ebay.ca/b/eBay-Refurbished/bn_7040708936')]", "xpath:href"],
+        ["xpath=//div[8]/div/ul/li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'eBay Refurbished')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c5f9965-73d5-4ec2-9f0e-8e171a0942b4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Refurbished Small Kitchen Appliances",
+      "targets": [
+        ["linkText=Refurbished Small Kitchen Appliances", "linkText"],
+        ["css=.vl-flyout-nav__js-show li:nth-child(6) > .vl-flyout-nav__js-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Refurbished Small Kitchen Appliances')]", "xpath:link"],
+        ["xpath=//div[@id='vl-flyout-nav']/ul/li[7]/div[2]/div/nav/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ebay.ca/e/_home-garden/refurbished-small-kitchen-appliances')]", "xpath:href"],
+        ["xpath=//li[7]/div[2]/div/nav/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Refurbished Small Kitchen Appliances')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f848fee-de58-4aed-9c29-aa6baa8c8c26",
+      "comment": "",
+      "command": "click",
+      "target": "css=.s-item:nth-child(1) .s-item__image-wrapper",
+      "targets": [
+        ["css=.s-item:nth-child(1) .s-item__image-wrapper", "css:finder"],
+        ["xpath=//section[@id='s0-28-9-0-1[0]-0-0']/ul/li/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e659893-ba4b-4cff-a49d-03a160d98a67",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.x-item-title",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7eb98805-5d23-4886-992c-d8bb2c9219e5",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.x-item-title__mainTitle > .ux-textspans",
+      "targets": [
+        ["css=.x-item-title__mainTitle > .ux-textspans", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div/div/h1/span", "xpath:idRelative"],
+        ["xpath=//h1/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Lenovo LOQ 16\" RTX 4050 144HZ AMD Ryzen 5 7640HS 8GB RAM 512GB SSD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "32ff3066-f5b9-4916-ac6f-3cee537caafd",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.x-price-primary > .ux-textspans",
+      "targets": [
+        ["css=.x-price-primary > .ux-textspans", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div[2]/div/div/div/div/div[2]/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'C $1,054.99')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffbe155c-f54b-4183-802d-c0612e724a0e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=mainImgHldr",
+      "targets": [
+        ["id=mainImgHldr", "id"],
+        ["css=#mainImgHldr", "css:finder"],
+        ["xpath=//div[@id='mainImgHldr']", "xpath:attributes"],
+        ["xpath=//div[@id='PicturePanel']/div/div/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16907d9c-6018-42fd-8c4a-41069104d25a",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.ux-layout-section-module-evo",
+      "targets": [
+        ["css=.ux-layout-section-module-evo", "css:finder"],
+        ["xpath=//div[@id='viTabs_0_is']/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div[3]/div[2]/div/div[2]/div/div/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "038c1f4c-935c-45c9-b490-f30a30cad315",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.d-stores-info-categories__container__info__section",
+      "targets": [
+        ["css=.d-stores-info-categories__container__info__section", "css:finder"],
+        ["xpath=//div[@id='LISTING_FRAME_MODULE']/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "03c608dc-ca54-4995-9cab-c2ce5813f60b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["88abd13b-718b-4d83-b271-1f6fa72a4bd7"]
+  }],
+  "urls": ["https://www.ebay.ca/"],
+  "plugins": []
+}
