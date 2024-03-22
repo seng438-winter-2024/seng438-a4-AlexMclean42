@@ -23,9 +23,27 @@
 95       this.lower = lower;
 96       this.upper = upper;
 97   }
-``` 
+```
+### Old Range() Method Mutant Coverage
+<div style="background-color: #f0f0f0; width: 800px;">
+    <img src="mutants_Range_photos/OldTest/Range().png" alt="Old Range()" width="800"/>
+</div>
+
+### New Range() Method Mutant Coverage
+<div style="background-color: #f0f0f0; width: 800px;">
+    <img src="mutants_Range_photos/NewTest/RangeFunction.png" alt="New Range()" width="800"/>
+</div>
 
 ## Mutants:
+<div style="background-color: #f0f0f0; width: 800px;">
+    <img src="mutants_Range_photos/OldTest/90.png" alt="Line 90 Range()" width="800"/>
+</div>
+<div style="background-color: #f0f0f0; width: 800px;">
+    <img src="mutants_Range_photos/OldTest/91,92.png" alt="Line 91,92 Range()" width="800"/>
+</div>
+<div style="background-color: #f0f0f0; width: 800px;">
+    <img src="mutants_Range_photos/OldTest/93,95,96.png" alt="Line 93,95,96 Range()" width="800"/>
+</div>
 ### Survived Mutants:
 - Line 90: removed conditional - replaced comparison check with false
   - replaced comparison check with false The test suite did not cover cases where lower > upper, so this mutant survived.
