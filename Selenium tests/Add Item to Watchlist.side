@@ -1,0 +1,487 @@
+{
+  "id": "a055ecba-96d6-4c36-a142-6704207410bb",
+  "version": "2.0",
+  "name": "Add Item to Watchlist",
+  "url": "https://www.ebay.com/",
+  "tests": [{
+    "id": "6484b7ef-e703-4143-84c2-0ca03cfd3fbb",
+    "name": "Add 1 item to watch list",
+    "commands": [{
+      "id": "3e541667-fe65-4b25-b659-db01252fdcf4",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ebay.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4a4077c-3262-4af8-a1c7-898c2e491e7e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1309x829",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f5b54e0-86a8-4d50-92bc-db642b61a936",
+      "comment": "",
+      "command": "click",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c284366d-83f1-461b-a3da-0f24e22e3d9f",
+      "comment": "",
+      "command": "type",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "#1 COMPLETE PLATINUM COLLECTION PCGS PR70DCAM $10,$25,$50,$100 LIBERTY 62 COINS"
+    }, {
+      "id": "420e0df0-daa4-47fa-b412-43c978214690",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "f4a41688-9b28-4d52-9228-4edf4d076042",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,600)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e3e4cb3-25ba-40b4-92fa-68eb9f65de20",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1548)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c0026b9-a85a-49ce-a6b2-96c88941a891",
+      "comment": "",
+      "command": "click",
+      "target": "css=#item2cccf7d7ee img",
+      "targets": [
+        ["css=#item2cccf7d7ee img", "css:finder"],
+        ["xpath=//img[@alt='#1 COMPLETE PLATINUM COLLECTION PCGS PR70DCAM $10,$25,$50,$100 LIBERTY 62 COINS']", "xpath:img"],
+        ["xpath=//li[@id='item2cccf7d7ee']/div/div/div/a/div/img", "xpath:idRelative"],
+        ["xpath=//ul/li/div/div/div/a/div/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9593",
+      "windowTimeout": 2000
+    }, {
+      "id": "9d5dda31-7382-42a7-88f8-09c14fba9488",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9593}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4320e8a6-7591-43bd-a226-48344d35cf0f",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,78)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb08b243-85ab-481b-88b7-312591abd86e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ux-call-to-action__text:nth-child(2)",
+      "targets": [
+        ["css=.ux-call-to-action__text:nth-child(2)", "css:finder"],
+        ["xpath=//span[@id='vi-atl-lnk-99']/button/span/span", "xpath:idRelative"],
+        ["xpath=//button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37f8df50-f752-4e6a-8b93-5567e151e6d7",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,279)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2889bff9-620b-47d6-a5f0-f7957186eda8",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e507145-2282-42cf-a392-0ebb6cd0510c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=button[data-testid='ux-call-to-action']",
+      "targets": [],
+      "value": "Watching"
+    }]
+  }, {
+    "id": "fa532e1f-2f69-4787-bbe8-a6883c3db320",
+    "name": "Add multiple items to watch list and check if they are there",
+    "commands": [{
+      "id": "49f87dfa-d591-468c-ad51-4bf8dab2ebb2",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ebay.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26545230-de27-4fe1-9ce3-37e4c0cd0ccc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Watchlist",
+      "targets": [
+        ["linkText=Watchlist", "linkText"],
+        ["css=.watchlist-menu", "css:finder"],
+        ["xpath=//a[contains(text(),'Watchlist')]", "xpath:link"],
+        ["xpath=//li[@id='gh-wl-click']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ebay.com/mye/myebay/watchlist')]", "xpath:href"],
+        ["xpath=//li[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Watchlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c7c6b7a-6230-4c38-9168-0b07944822ec",
+      "comment": "",
+      "command": "click",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba7c78a6-803e-4ac1-b12a-5a991cb29163",
+      "comment": "",
+      "command": "click",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ecb77f7-6a0a-4f5a-8302-91c0a3b238e8",
+      "comment": "",
+      "command": "type",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Harvey Leach The Great Wall Masterpiece Art Guitar OM Acoustic"
+    }, {
+      "id": "98594163-2df6-411d-b848-565a1d0b946d",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "0be74db9-3110-4100-bedd-1c6e2c74825b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#item28bf25badc img",
+      "targets": [
+        ["css=#item28bf25badc img", "css:finder"],
+        ["xpath=//img[@alt='Harvey Leach The Great Wall Masterpiece Art Guitar OM Acoustic']", "xpath:img"],
+        ["xpath=//li[@id='item28bf25badc']/div/div/div/a/div/img", "xpath:idRelative"],
+        ["xpath=//li[2]/div/div/div/a/div/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win8788",
+      "windowTimeout": 2000
+    }, {
+      "id": "afd850a8-36cb-4f63-a446-af357c4fde93",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3424ca8-07ef-4fa0-ad05-0a6544c7982f",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win8788}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a7228749-fcca-4003-95b0-b506b42fbc98",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn--fluid",
+      "targets": [
+        ["css=.btn--fluid", "css:finder"],
+        ["xpath=(//button[@type='button'])[19]", "xpath:attributes"],
+        ["xpath=//span[@id='vi-atl-lnk-99']/button", "xpath:idRelative"],
+        ["xpath=//span/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to watchlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf54c1d8-8035-40d7-9d8b-786a7973e35b",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51d0a2a5-7121-46b0-b278-2cfc90f7c262",
+      "comment": "",
+      "command": "click",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d9e2897-73a9-408a-93ed-80453cf9b4ec",
+      "comment": "",
+      "command": "type",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Eddie Van Halen Stage Used Guitar Van Halen Signed Guitar EVH 2008 Video Proof !"
+    }, {
+      "id": "710e228a-e643-49fd-a1d7-cd2e8dc52b73",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=gh-ac",
+      "targets": [
+        ["id=gh-ac", "id"],
+        ["name=_nkw", "name"],
+        ["css=#gh-ac", "css:finder"],
+        ["xpath=//input[@id='gh-ac']", "xpath:attributes"],
+        ["xpath=//div[@id='gh-ac-box2']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "30a9cdc5-c55b-4763-ac09-65dbcf5f1a5f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#item3e173b2812 .s-item__title",
+      "targets": [
+        ["css=#item3e173b2812 .s-item__title", "css:finder"],
+        ["xpath=//li[@id='item3e173b2812']/div/div[2]/a/div", "xpath:idRelative"],
+        ["xpath=//ul/li/div/div[2]/a/div", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6817",
+      "windowTimeout": 2000
+    }, {
+      "id": "947328cb-9fd8-474f-8935-bb9557b95639",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6817}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db646ca6-82f0-4d38-a1ec-210237e4000d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn--fluid",
+      "targets": [
+        ["css=.btn--fluid", "css:finder"],
+        ["xpath=(//button[@type='button'])[19]", "xpath:attributes"],
+        ["xpath=//span[@id='vi-atl-lnk-99']/button", "xpath:idRelative"],
+        ["xpath=//span/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to watchlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9edf2e58-0f8d-4596-bc06-36e27ad392db",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn--fluid",
+      "targets": [
+        ["css=.btn--fluid", "css:finder"],
+        ["xpath=(//button[@type='button'])[19]", "xpath:attributes"],
+        ["xpath=//span[@id='vi-atl-lnk-99']/button", "xpath:idRelative"],
+        ["xpath=//span/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to watchlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "afcf8381-98d6-4e9d-8f92-ab0b2150bf44",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,272)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a2c4932-efbf-4f64-b5ab-666d4c61a266",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn--fluid",
+      "targets": [
+        ["css=.btn--fluid", "css:finder"],
+        ["xpath=(//button[@type='button'])[19]", "xpath:attributes"],
+        ["xpath=//span[@id='vi-atl-lnk-99']/button", "xpath:idRelative"],
+        ["xpath=//span/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Watching')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5276ac7-28c1-475c-97ab-4c3c9137d86d",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78cf4951-2399-483c-a0da-39248fb96104",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Watchlist",
+      "targets": [
+        ["linkText=Watchlist", "linkText"],
+        ["css=.watchlist-menu", "css:finder"],
+        ["xpath=//a[contains(text(),'Watchlist')]", "xpath:link"],
+        ["xpath=//li[@id='gh-wl-click']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ebay.com/mye/myebay/watchlist')]", "xpath:href"],
+        ["xpath=//li[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Watchlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "578f401e-6992-491a-aadc-40208f9af09f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.rvi__titlelink > span",
+      "targets": [
+        ["css=.rvi__titlelink > span", "css:finder"],
+        ["xpath=//div[@id='gh-wl-click-body']/div/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'View all items you are watching')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3af51d95-8c9e-4e51-9e2c-99c508511696",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73fe9338-3776-4b07-8a53-5dac1a0885be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rvi__titlelink > span",
+      "targets": [
+        ["css=.rvi__titlelink > span", "css:finder"],
+        ["xpath=//div[@id='gh-wl-click-body']/div/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'View all items you are watching')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3136b3dd-b3de-4c4a-9153-db4e4ff2b46b",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9aafea84-523e-402a-97a8-aac83ca68c40",
+      "comment": "",
+      "command": "store",
+      "target": "Eddie Van Halen Stage Used Guitar Van Halen Signed Guitar EVH 2008 Video Proof !",
+      "targets": [],
+      "value": "${ITEM_TITLE}"
+    }, {
+      "id": "82d1725f-cca6-4e17-a37c-3e71b5106954",
+      "comment": "",
+      "command": "store",
+      "target": "US $124,999.00",
+      "targets": [],
+      "value": "${EXPECTED_PRICE}"
+    }, {
+      "id": "75fb1af3-2232-4bd0-b6f2-7f06f06550d5",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.evaluate(\"//*[contains(text(), '${ITEM_TITLE}')]\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue !== null",
+      "targets": [],
+      "value": "actual_price"
+    }, {
+      "id": "b3f24ef1-178e-42ed-a59c-0bd588cdd8e1",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.evaluate(\"//*[contains(text(), '${ITEM_TITLE}')]/../../..//li[@class='price-info']//span[@class='info-price']//span[@class='BOLD']\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.textContent.trim();",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aaff602f-ff08-4fd5-8978-f4545b27129e",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return '${actual_price}' === '${EXPECTED_PRICE}'",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "72dc791e-4216-4907-a0d9-65ae4382c4a5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6484b7ef-e703-4143-84c2-0ca03cfd3fbb"]
+  }],
+  "urls": ["https://www.ebay.com/"],
+  "plugins": []
+}
