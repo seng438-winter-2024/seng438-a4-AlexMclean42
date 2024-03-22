@@ -27,7 +27,7 @@
 
 ## Mutants:
 ### Survived Mutants:
-- Line 90: removed conditional
+- Line 90: removed conditional - replaced comparison check with false
   - replaced comparison check with false The test suite did not cover cases where lower > upper, so this mutant survived.
 - Line 95: Decremented (a--) double local variable number 1
   - This mutant tells us that our test suite did not cover the case of changing the value of lower to be decremented by 1.
